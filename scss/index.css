@@ -585,4 +585,71 @@ header .header_container .submit_button {
   #hero .hero_img {
     display: none;
   }
+}
+#dna_info {
+  display: flex;
+  width: 80%;
+  margin: 0 10%;
+}
+#dna_info .ifo_text {
+  width: 50%;
+}
+#dna_info .ifo_text h1 {
+  font-size: 3rem;
+}
+#dna_info .ifo_text p {
+  width: 70%;
+  margin: 0 0 5%;
+  font-size: 20px;
+}
+#dna_info .movie {
+  width: 50%;
+}
+#dna_info .movie video {
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+  margin-top: 3rem;
+}
+
+@media (max-width: 767px) {
+  #dna_info {
+    display: flex;
+    width: 80%;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  #dna_info .ifo_text {
+    width: 100%;
+    text-align: center;
+    align-items: center;
+  }
+  #dna_info .ifo_text p {
+    margin: 0 15% 5%;
+    text-align: center;
+    align-items: center;
+  }
+  #dna_info .movie {
+    width: 100%;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  #dna_info {
+    display: flex;
+    width: 80%;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  #dna_info .ifo_text {
+    width: 100%;
+    text-align: center;
+    align-items: center;
+  }
+  #dna_info .ifo_text p {
+    margin: 0 15% 5%;
+    text-align: center;
+    align-items: center;
+  }
+  #dna_info .movie {
+    width: 100%;
+  }
 }/*# sourceMappingURL=index.css.map */
