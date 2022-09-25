@@ -6,10 +6,10 @@
   flex-direction: row;
   justify-content: space-between;
 
-  .hero_text {
+  .hero_title {
     width: 50%;
 
-    .hero_title {
+    .hero_text {
       width: 100%;
 
       h3 {
@@ -44,56 +44,33 @@
         flex-direction: row;
 
         p {
-          margin: 2% 0 0 2%;
+          margin: 0 3%;
         }
 
-        img {
-          width: 30px;
-          height: 30px;
+        .fa-solid {
+          margin-left: 5%;
+          color: rebeccapurple;
         }
       }
     }
-    .button-price {
+    .hero_button-price {
       display: flex;
       width: 80%;
       margin: 3% 0;
       flex-direction: row;
 
-      .submit_button {
-        height: 30%;
-        width: 35%;
-        border-radius: 10px;
-        padding: 0;
-        border: $secondary-color-orange solid 1px;
-        margin: 2% 0;
-        font-weight: 200;
-        line-height: 3rem;
-        font-size: 1rem;
-        text-transform: uppercase;
-        background-color: $secondary-color-orange;
-        color: white;
-        cursor: pointer;
-
-        img {
-          width: 30px;
-          margin: 0 0 -4% 4%;
-        }
-      }
-      .price {
+      .price_block {
         display: flex;
         margin: 2% 0 2% 5%;
         flex-direction: column;
 
-        .only_for {
+        h1 {
           width: 100px;
+          margin: 0;
           font-size: 1rem;
-
-          p {
-            margin: 0;
-          }
         }
 
-        .money {
+        .money_block {
           display: flex;
           margin: -15px 0 0;
           font-size: 140%;
@@ -127,9 +104,9 @@
 
 @media (max-width: 767px) {
   #hero {
-    .hero_text {
+    .hero_title {
       width: 100%;
-      .hero_title {
+      .hero_text {
         h1 {
           width: 100%;
           margin: 0 0 auto;
@@ -142,12 +119,6 @@
           }
         }
       }
-
-      .button-price {
-        .submit_button {
-          width: 35%;
-        }
-      }
     }
 
     .hero_img {
@@ -157,9 +128,9 @@
 }
 @media (min-width: 768px) and (max-width: 991px) {
   #hero {
-    .hero_text {
+    .hero_title {
       width: 100%;
-      .hero_title {
+      .hero_text {
         width: 70%;
         h1 {
           width: 100%;
@@ -171,12 +142,6 @@
             text-decoration: none;
             cursor: pointer;
           }
-        }
-      }
-
-      .button-price {
-        .submit_button {
-          width: 35%;
         }
       }
     }
@@ -189,9 +154,9 @@
 
 @media (min-width: 992px) and (max-width: 1199px) {
   #hero {
-    .hero_text {
+    .hero_title {
       width: 100%;
-      .hero_title {
+      .hero_text {
         width: 70%;
         h1 {
           width: 100%;
@@ -203,12 +168,6 @@
             text-decoration: none;
             cursor: pointer;
           }
-        }
-      }
-
-      .button-price {
-        .submit_button {
-          width: 25%;
         }
       }
     }

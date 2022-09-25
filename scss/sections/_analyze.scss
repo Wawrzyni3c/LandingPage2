@@ -1,0 +1,724 @@
+#analyze {
+  display: flex;
+  width: 100%;
+  margin: 5% 0 0;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  h1 {
+    width: 100%;
+    text-align: center;
+    font-size: 2rem;
+  }
+
+  p {
+    width: 36%;
+    margin: 2% 32% 4%;
+    font-size: 20px;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .img_analyze {
+    width: 50%;
+  }
+
+  .human_analyze {
+    width: 50%;
+
+    .blood {
+      width: 70%;
+      height: 15%;
+      border-radius: 10px;
+      margin-bottom: 2%;
+      background-color: #fff3e0;
+
+      .blood_text {
+        display: flex;
+        height: 10%;
+        width: 50%;
+        margin: 0;
+        padding: 3% 0 0;
+        flex-direction: row;
+
+        a {
+          margin: 1% 0 0 2%;
+          text-decoration: none;
+          color: black;
+          font-size: 2rem;
+        }
+
+        img {
+          width: 47px;
+          height: 47px;
+          margin: 0 3% 0 4%;
+        }
+      }
+    }
+
+    .mood {
+      width: 70%;
+      height: 15%;
+      border-radius: 10px;
+      margin-bottom: 2%;
+      background-color: #deecf1;
+
+      .mood_text {
+        display: flex;
+        height: 10%;
+        width: 80%;
+        margin: 0;
+        padding: 3% 0 0;
+        flex-direction: row;
+
+        a {
+          margin: 1% 0 0 0;
+          text-decoration: none;
+          color: black;
+          font-size: 2rem;
+        }
+
+        img {
+          width: 47px;
+          height: 47px;
+          margin: 0 3% 0 2%;
+        }
+      }
+    }
+
+    .pain {
+      width: 70%;
+      height: 15%;
+      border-radius: 10px;
+      margin-bottom: 2%;
+      background-color: #f5f9ea;
+
+      .pain_text {
+        display: flex;
+        height: 10%;
+        width: 50%;
+        margin: 0;
+        padding: 3% 0 0;
+        flex-direction: row;
+
+        a {
+          margin: 1% 0 0 2%;
+          text-decoration: none;
+          color: black;
+          font-size: 2rem;
+        }
+
+        img {
+          width: 47px;
+          height: 47px;
+          margin: 0 3% 0 4%;
+        }
+      }
+    }
+
+    .sleep {
+      width: 70%;
+      height: 15%;
+      border-radius: 10px;
+      margin-bottom: 2%;
+      background-color: #f3e4f6;
+
+      .sleep_text {
+        display: flex;
+        height: 10%;
+        width: 50%;
+        margin: 0;
+        padding: 3% 0 0;
+        flex-direction: row;
+
+        a {
+          margin: 1% 0 0 2%;
+          text-decoration: none;
+          color: black;
+          font-size: 2rem;
+        }
+
+        img {
+          width: 47px;
+          height: 47px;
+          margin: 0 3% 0 4%;
+        }
+      }
+    }
+
+    .stress {
+      width: 70%;
+      height: 15%;
+      border-radius: 10px;
+      margin-bottom: 2%;
+      background-color: #e9edfe;
+
+      .stress_text {
+        display: flex;
+        height: 10%;
+        width: 50%;
+        margin: 0;
+        padding: 3% 0 0;
+        flex-direction: row;
+
+        a {
+          margin: 1% 0 0 2%;
+          text-decoration: none;
+          color: black;
+          font-size: 2rem;
+        }
+
+        img {
+          width: 47px;
+          height: 47px;
+          margin: 0 3% 0 4%;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  #analyze {
+    display: flex;
+    width: 100%;
+    margin: 5% 0 0;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+
+    h1 {
+      width: 100%;
+      text-align: center;
+      font-size: 2rem;
+    }
+
+    p {
+      width: 36%;
+      margin: 2% 32% 4%;
+      justify-content: center;
+      text-align: center;
+    }
+
+    .img_analyze {
+      display: none;
+    }
+
+    .human_analyze {
+      width: 70%;
+      margin: 0 15%;
+      flex-wrap: wrap;
+
+      .blood {
+        width: 100%;
+        height: 15%;
+        border-radius: 10px;
+        margin-bottom: 2%;
+        background-color: #fff3e0;
+
+        .blood_text {
+          display: flex;
+          height: 10%;
+          width: 70%;
+          margin: 0;
+          padding: 1% 0 0;
+          flex-direction: row;
+
+          a {
+            margin: 1% 0 0 2%;
+            text-decoration: none;
+            color: black;
+            font-size: 2rem;
+          }
+
+          img {
+            width: 47px;
+            height: 47px;
+            margin: 0 3% 0 4%;
+          }
+        }
+      }
+
+      .mood {
+        width: 100%;
+        height: 15%;
+        border-radius: 10px;
+        margin-bottom: 2%;
+        background-color: #deecf1;
+
+        .mood_text {
+          display: flex;
+          height: 10%;
+          width: 90%;
+          margin: 0;
+          padding: 1% 0;
+          flex-direction: row;
+
+          a {
+            margin: 1% 0 0 0;
+            text-decoration: none;
+            color: black;
+            font-size: 2rem;
+          }
+
+          img {
+            width: 47px;
+            height: 47px;
+            margin: 0 3% 0 2%;
+          }
+        }
+      }
+
+      .pain {
+        width: 100%;
+        height: 15%;
+        border-radius: 10px;
+        margin-bottom: 2%;
+        background-color: #f5f9ea;
+
+        .pain_text {
+          display: flex;
+          height: 10%;
+          width: 50%;
+          margin: 0;
+          padding: 1% 0 0;
+          flex-direction: row;
+
+          a {
+            margin: 1% 0 0 2%;
+            text-decoration: none;
+            color: black;
+            font-size: 2rem;
+          }
+
+          img {
+            width: 47px;
+            height: 47px;
+            margin: 0 3% 0 4%;
+          }
+        }
+      }
+
+      .sleep {
+        width: 100%;
+        height: 15%;
+        border-radius: 10px;
+        margin-bottom: 2%;
+        background-color: #f3e4f6;
+
+        .sleep_text {
+          display: flex;
+          height: 10%;
+          margin: 0;
+          padding: 1% 0 0;
+          flex-direction: row;
+
+          a {
+            margin: 1% 0 0 2%;
+            text-decoration: none;
+            color: black;
+            font-size: 2rem;
+          }
+
+          img {
+            width: 47px;
+            height: 47px;
+            margin: 0 3% 0 4%;
+          }
+        }
+      }
+
+      .stress {
+        width: 100%;
+        height: 15%;
+        border-radius: 10px;
+        margin-bottom: 2%;
+        background-color: #e9edfe;
+
+        .stress_text {
+          display: flex;
+          height: 10%;
+          margin: 0;
+          padding: 1% 0 0;
+          flex-direction: row;
+
+          a {
+            margin: 1% 0 0 2%;
+            text-decoration: none;
+            color: black;
+            font-size: 2rem;
+          }
+
+          img {
+            width: 47px;
+            height: 47px;
+            margin: 0 3% 0 4%;
+          }
+        }
+      }
+    }
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  #analyze {
+    display: flex;
+    width: 100%;
+    margin: 5% 0 0;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+
+    h1 {
+      width: 100%;
+      text-align: center;
+      font-size: 2rem;
+    }
+
+    p {
+      width: 36%;
+      margin: 2% 32% 4%;
+      justify-content: center;
+      text-align: center;
+    }
+
+    .img_analyze {
+      display: none;
+    }
+
+    .human_analyze {
+      width: 70%;
+      margin: 0 15%;
+      flex-wrap: wrap;
+
+      .blood {
+        width: 100%;
+        height: 15%;
+        border-radius: 10px;
+        margin-bottom: 2%;
+        background-color: #fff3e0;
+
+        .blood_text {
+          display: flex;
+          height: 10%;
+          width: 70%;
+          margin: 0;
+          padding: 1% 0 0;
+          flex-direction: row;
+
+          a {
+            margin: 1% 0 0 2%;
+            text-decoration: none;
+            color: black;
+            font-size: 2rem;
+          }
+
+          img {
+            width: 47px;
+            height: 47px;
+            margin: 0 3% 0 4%;
+          }
+        }
+      }
+
+      .mood {
+        width: 100%;
+        height: 15%;
+        border-radius: 10px;
+        margin-bottom: 2%;
+        background-color: #deecf1;
+
+        .mood_text {
+          display: flex;
+          height: 10%;
+          width: 90%;
+          margin: 0;
+          padding: 1% 0;
+          flex-direction: row;
+
+          a {
+            margin: 1% 0 0 0;
+            text-decoration: none;
+            color: black;
+            font-size: 2rem;
+          }
+
+          img {
+            width: 47px;
+            height: 47px;
+            margin: 0 3% 0 2%;
+          }
+        }
+      }
+
+      .pain {
+        width: 100%;
+        height: 15%;
+        border-radius: 10px;
+        margin-bottom: 2%;
+        background-color: #f5f9ea;
+
+        .pain_text {
+          display: flex;
+          height: 10%;
+          width: 50%;
+          margin: 0;
+          padding: 1% 0 0;
+          flex-direction: row;
+
+          a {
+            margin: 1% 0 0 2%;
+            text-decoration: none;
+            color: black;
+            font-size: 2rem;
+          }
+
+          img {
+            width: 47px;
+            height: 47px;
+            margin: 0 3% 0 4%;
+          }
+        }
+      }
+
+      .sleep {
+        width: 100%;
+        height: 15%;
+        border-radius: 10px;
+        margin-bottom: 2%;
+        background-color: #f3e4f6;
+
+        .sleep_text {
+          display: flex;
+          height: 10%;
+          margin: 0;
+          padding: 1% 0 0;
+          flex-direction: row;
+
+          a {
+            margin: 1% 0 0 2%;
+            text-decoration: none;
+            color: black;
+            font-size: 2rem;
+          }
+
+          img {
+            width: 47px;
+            height: 47px;
+            margin: 0 3% 0 4%;
+          }
+        }
+      }
+
+      .stress {
+        width: 100%;
+        height: 15%;
+        border-radius: 10px;
+        margin-bottom: 2%;
+        background-color: #e9edfe;
+
+        .stress_text {
+          display: flex;
+          height: 10%;
+          margin: 0;
+          padding: 1% 0 0;
+          flex-direction: row;
+
+          a {
+            margin: 1% 0 0 2%;
+            text-decoration: none;
+            color: black;
+            font-size: 2rem;
+          }
+
+          img {
+            width: 47px;
+            height: 47px;
+            margin: 0 3% 0 4%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  #analyze {
+    display: flex;
+    width: 100%;
+    margin: 5% 0 0;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+
+    h1 {
+      width: 100%;
+      text-align: center;
+      font-size: 2rem;
+    }
+
+    p {
+      width: 36%;
+      margin: 2% 32% 4%;
+      justify-content: center;
+      text-align: center;
+    }
+
+    .img_analyze {
+      margin: 0 15% 2%;
+    }
+
+    .human_analyze {
+      width: 70%;
+      margin: 0 15%;
+      flex-wrap: wrap;
+
+      .blood {
+        width: 100%;
+        height: 15%;
+        border-radius: 10px;
+        margin-bottom: 2%;
+        background-color: #fff3e0;
+
+        .blood_text {
+          display: flex;
+          height: 10%;
+          width: 70%;
+          margin: 0;
+          padding: 1% 0 0;
+          flex-direction: row;
+
+          a {
+            margin: 1% 0 0 2%;
+            text-decoration: none;
+            color: black;
+            font-size: 2rem;
+          }
+
+          img {
+            width: 47px;
+            height: 47px;
+            margin: 0 3% 0 4%;
+          }
+        }
+      }
+
+      .mood {
+        width: 100%;
+        height: 15%;
+        border-radius: 10px;
+        margin-bottom: 2%;
+        background-color: #deecf1;
+
+        .mood_text {
+          display: flex;
+          height: 10%;
+          width: 90%;
+          margin: 0;
+          padding: 1% 0;
+          flex-direction: row;
+
+          a {
+            margin: 1% 0 0 0;
+            text-decoration: none;
+            color: black;
+            font-size: 2rem;
+          }
+
+          img {
+            width: 47px;
+            height: 47px;
+            margin: 0 3% 0 2%;
+          }
+        }
+      }
+
+      .pain {
+        width: 100%;
+        height: 15%;
+        border-radius: 10px;
+        margin-bottom: 2%;
+        background-color: #f5f9ea;
+
+        .pain_text {
+          display: flex;
+          height: 10%;
+          width: 50%;
+          margin: 0;
+          padding: 1% 0 0;
+          flex-direction: row;
+
+          a {
+            margin: 1% 0 0 2%;
+            text-decoration: none;
+            color: black;
+            font-size: 2rem;
+          }
+
+          img {
+            width: 47px;
+            height: 47px;
+            margin: 0 3% 0 4%;
+          }
+        }
+      }
+
+      .sleep {
+        width: 100%;
+        height: 15%;
+        border-radius: 10px;
+        margin-bottom: 2%;
+        background-color: #f3e4f6;
+
+        .sleep_text {
+          display: flex;
+          height: 10%;
+          margin: 0;
+          padding: 1% 0 0;
+          flex-direction: row;
+
+          a {
+            margin: 1% 0 0 2%;
+            text-decoration: none;
+            color: black;
+            font-size: 2rem;
+          }
+
+          img {
+            width: 47px;
+            height: 47px;
+            margin: 0 3% 0 4%;
+          }
+        }
+      }
+
+      .stress {
+        width: 100%;
+        height: 15%;
+        border-radius: 10px;
+        margin-bottom: 2%;
+        background-color: #e9edfe;
+
+        .stress_text {
+          display: flex;
+          height: 10%;
+          margin: 0;
+          padding: 1% 0 0;
+          flex-direction: row;
+
+          a {
+            margin: 1% 0 0 2%;
+            text-decoration: none;
+            color: black;
+            font-size: 2rem;
+          }
+
+          img {
+            width: 47px;
+            height: 47px;
+            margin: 0 3% 0 4%;
+          }
+        }
+      }
+    }
+  }
+}

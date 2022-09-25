@@ -6,7 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="./scss/index.css" />
-    <script src="./hamburger.js"></script>
+    <script
+      src="https://kit.fontawesome.com/a81a7c4816.js"
+      crossorigin="anonymous"
+      src="./hamburger.js"
+    ></script>
   </head>
   <body>
     <header>
@@ -47,10 +51,11 @@
         <button class="submit_button" type="button">order now</button>
       </div>
     </header>
+
     <main>
       <section id="hero">
-        <div class="hero_text">
-          <div class="hero_title">
+        <div class="hero_title">
+          <div class="hero_text">
             <h3>Health DNA test + Wellness Plans</h3>
             <h1>
               Get The Only
@@ -65,32 +70,29 @@
 
           <div class="hero_frame">
             <div class="frame_text">
-              <img src="./public/icons/Tick Square.png" />
+              <i class="fa-solid fa-square-check"></i>
               <p>Analysis of health-related genetic variants</p>
             </div>
             <div class="frame_text">
-              <img src="./public/icons/Tick Square.png" />
+              <i class="fa-solid fa-square-check"></i>
               <p>Summary of genetic risks</p>
             </div>
             <div class="frame_text">
-              <img src="./public/icons/Tick Square.png" />
+              <i class="fa-solid fa-square-check"></i>
               <p>40+ personalized wellness reports</p>
             </div>
             <div class="frame_text">
-              <img src="./public/icons/Tick Square.png" />
+              <i class="fa-solid fa-square-check"></i>
               <p>Custom health pln builder</p>
             </div>
           </div>
-
-          <div class="button-price">
+          <div class="hero_button-price">
             <button class="submit_button">
-              order now<img src="./public/icons/Arrow - Right Circle.png" />
+              order now<i class="fa-solid fa-circle-chevron-right"></i>
             </button>
-            <div class="price">
-              <div class="only_for">
-                <p>Only For</p>
-              </div>
-              <div class="money">
+            <div class="price_block">
+              <h1>Only For</h1>
+              <div class="money_block">
                 <p>$199</p>
                 <p><del>$398</del></p>
               </div>
@@ -101,6 +103,7 @@
           <img src="./public/images/heroIMG.png" alt="hero_img" />
         </div>
       </section>
+
       <section id="dna_info">
         <div class="ifo_text">
           <h1>What is DNA?</h1>
@@ -120,6 +123,59 @@
             <source src="./public/movies/DNAVideo.mp4" type="video/mp4" />
           </video>
         </div>
+      </section>
+
+      <section id="analyze">
+        <h1>You spit. We analyze.</h1>
+        <p>
+          Your DNA influences your health, so what does that mean for you? Find
+          out with personalized reports covering topics like:
+        </p>
+        <div class="img_analyze">
+          <img src="./public/images/6.png" alt="img" />
+        </div>
+        <div class="human_analyze">
+          <div class="blood">
+            <div class="blood_text">
+              <img src="./public/icons/Blood.png" />
+              <a href="https://www.cdc.gov/diabetes/basics/getting-tested.html"
+                >Blood sugar levels</a
+              >
+            </div>
+          </div>
+          <div class="mood">
+            <div class="mood_text">
+              <img src="./public/icons/Mood.png" />
+              <a
+                href="https://my.clevelandclinic.org/health/diseases/9536-anxiety-disorders"
+                >Anxiety and mood conditions</a
+              >
+            </div>
+          </div>
+          <div class="pain">
+            <div class="pain_text">
+              <img src="./public/icons/Pain.png" />
+              <a href="https://www.nhs.uk/conditions/joint-pain/">Joint pain</a>
+            </div>
+          </div>
+          <div class="sleep">
+            <div class="sleep_text">
+              <img src="./public/icons/Sleep.png" />
+              <a href="https://academic.oup.com/sleep">Sleep</a>
+            </div>
+          </div>
+          <div class="stress">
+            <div class="stress_text">
+              <img src="./public/icons/Stress.png" />
+              <a href="https://www.simplypsychology.org/stress-biology.html"
+                >Stress response</a
+              >
+            </div>
+          </div>
+        </div>
+        <button class="submit_button">
+          order now<i class="fa-solid fa-circle-chevron-right"></i>
+        </button>
       </section>
     </main>
   </body>
