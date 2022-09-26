@@ -58,6 +58,11 @@
       width: 80%;
       margin: 3% 0;
       flex-direction: row;
+      align-items: center;
+
+      .button_block {
+        width: 35%;
+      }
 
       .price_block {
         display: flex;

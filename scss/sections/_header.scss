@@ -45,6 +45,10 @@ header {
         }
       }
     }
+
+    .button_block {
+      width: 15%;
+    }
   }
 }
 
@@ -54,6 +58,11 @@ header {
       flex-direction: column;
       height: auto;
       flex-wrap: wrap;
+
+      .button_block {
+        width: 20%;
+        margin-bottom: 2%;
+      }
     }
 
     .logo {
@@ -135,6 +144,11 @@ header {
           }
         }
       }
+
+      .button_block {
+        width: 20%;
+        margin-bottom: 2%;
+      }
     }
   }
 }
@@ -186,6 +200,10 @@ header {
             }
           }
         }
+      }
+
+      .button_block {
+        width: 20%;
       }
     }
   }

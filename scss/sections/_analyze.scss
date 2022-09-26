@@ -26,14 +26,14 @@
   .human_analyze {
     width: 50%;
 
-    .blood {
+    .blood_container {
       width: 70%;
       height: 15%;
       border-radius: 10px;
       margin-bottom: 2%;
       background-color: #fff3e0;
 
-      .blood_text {
+      .blood_items {
         display: flex;
         height: 10%;
         width: 50%;
@@ -56,14 +56,14 @@
       }
     }
 
-    .mood {
+    .mood_container {
       width: 70%;
       height: 15%;
       border-radius: 10px;
       margin-bottom: 2%;
       background-color: #deecf1;
 
-      .mood_text {
+      .mood_items {
         display: flex;
         height: 10%;
         width: 80%;
@@ -86,14 +86,14 @@
       }
     }
 
-    .pain {
+    .pain_container {
       width: 70%;
       height: 15%;
       border-radius: 10px;
       margin-bottom: 2%;
       background-color: #f5f9ea;
 
-      .pain_text {
+      .pain_items {
         display: flex;
         height: 10%;
         width: 50%;
@@ -116,14 +116,14 @@
       }
     }
 
-    .sleep {
+    .sleep_container {
       width: 70%;
       height: 15%;
       border-radius: 10px;
       margin-bottom: 2%;
       background-color: #f3e4f6;
 
-      .sleep_text {
+      .sleep_items {
         display: flex;
         height: 10%;
         width: 50%;
@@ -146,14 +146,14 @@
       }
     }
 
-    .stress {
+    .stress_container {
       width: 70%;
       height: 15%;
       border-radius: 10px;
       margin-bottom: 2%;
       background-color: #e9edfe;
 
-      .stress_text {
+      .stress_items {
         display: flex;
         height: 10%;
         width: 50%;
@@ -175,6 +175,11 @@
         }
       }
     }
+  }
+
+  .button_block {
+    max-width: 300px;
+    width: 25%;
   }
 }
 
@@ -186,6 +191,7 @@
     flex-wrap: wrap;
     justify-content: center;
     flex-direction: column;
+    align-items: center;
 
     h1 {
       width: 100%;
@@ -209,14 +215,14 @@
       margin: 0 15%;
       flex-wrap: wrap;
 
-      .blood {
+      .blood_container {
         width: 100%;
         height: 15%;
         border-radius: 10px;
         margin-bottom: 2%;
         background-color: #fff3e0;
 
-        .blood_text {
+        .blood_items {
           display: flex;
           height: 10%;
           width: 70%;
@@ -239,14 +245,14 @@
         }
       }
 
-      .mood {
+      .mood_container {
         width: 100%;
         height: 15%;
         border-radius: 10px;
         margin-bottom: 2%;
         background-color: #deecf1;
 
-        .mood_text {
+        .mood_items {
           display: flex;
           height: 10%;
           width: 90%;
@@ -269,14 +275,14 @@
         }
       }
 
-      .pain {
+      .pain_container {
         width: 100%;
         height: 15%;
         border-radius: 10px;
         margin-bottom: 2%;
         background-color: #f5f9ea;
 
-        .pain_text {
+        .pain_items {
           display: flex;
           height: 10%;
           width: 50%;
@@ -299,14 +305,14 @@
         }
       }
 
-      .sleep {
+      .sleep_container {
         width: 100%;
         height: 15%;
         border-radius: 10px;
         margin-bottom: 2%;
         background-color: #f3e4f6;
 
-        .sleep_text {
+        .sleep_items {
           display: flex;
           height: 10%;
           margin: 0;
@@ -328,14 +334,14 @@
         }
       }
 
-      .stress {
+      .stress_container {
         width: 100%;
         height: 15%;
         border-radius: 10px;
         margin-bottom: 2%;
         background-color: #e9edfe;
 
-        .stress_text {
+        .stress_items {
           display: flex;
           height: 10%;
           margin: 0;
@@ -356,6 +362,9 @@
           }
         }
       }
+    }
+    .button_block {
+      width: 40%;
     }
   }
 }
@@ -367,6 +376,7 @@
     flex-wrap: wrap;
     justify-content: center;
     flex-direction: column;
+    align-items: center;
 
     h1 {
       width: 100%;
@@ -390,14 +400,14 @@
       margin: 0 15%;
       flex-wrap: wrap;
 
-      .blood {
+      .blood_container {
         width: 100%;
         height: 15%;
         border-radius: 10px;
         margin-bottom: 2%;
         background-color: #fff3e0;
 
-        .blood_text {
+        .blood_items {
           display: flex;
           height: 10%;
           width: 70%;
@@ -420,14 +430,14 @@
         }
       }
 
-      .mood {
+      .mood_container {
         width: 100%;
         height: 15%;
         border-radius: 10px;
         margin-bottom: 2%;
         background-color: #deecf1;
 
-        .mood_text {
+        .mood_items {
           display: flex;
           height: 10%;
           width: 90%;
@@ -450,14 +460,14 @@
         }
       }
 
-      .pain {
+      .pain_container {
         width: 100%;
         height: 15%;
         border-radius: 10px;
         margin-bottom: 2%;
         background-color: #f5f9ea;
 
-        .pain_text {
+        .pain_items {
           display: flex;
           height: 10%;
           width: 50%;
@@ -480,14 +490,14 @@
         }
       }
 
-      .sleep {
+      .sleep_container {
         width: 100%;
         height: 15%;
         border-radius: 10px;
         margin-bottom: 2%;
         background-color: #f3e4f6;
 
-        .sleep_text {
+        .sleep_items {
           display: flex;
           height: 10%;
           margin: 0;
@@ -509,14 +519,14 @@
         }
       }
 
-      .stress {
+      .stress_container {
         width: 100%;
         height: 15%;
         border-radius: 10px;
         margin-bottom: 2%;
         background-color: #e9edfe;
 
-        .stress_text {
+        .stress_items {
           display: flex;
           height: 10%;
           margin: 0;
@@ -537,6 +547,10 @@
           }
         }
       }
+    }
+
+    .button_block {
+      width: 40%;
     }
   }
 }
@@ -549,6 +563,7 @@
     flex-wrap: wrap;
     justify-content: center;
     flex-direction: column;
+    align-items: center;
 
     h1 {
       width: 100%;
@@ -564,7 +579,8 @@
     }
 
     .img_analyze {
-      margin: 0 15% 2%;
+      width: 70%;
+      margin: 0 15%;
     }
 
     .human_analyze {
@@ -572,14 +588,14 @@
       margin: 0 15%;
       flex-wrap: wrap;
 
-      .blood {
+      .blood_container {
         width: 100%;
         height: 15%;
         border-radius: 10px;
         margin-bottom: 2%;
         background-color: #fff3e0;
 
-        .blood_text {
+        .blood_items {
           display: flex;
           height: 10%;
           width: 70%;
@@ -602,14 +618,14 @@
         }
       }
 
-      .mood {
+      .mood_container {
         width: 100%;
         height: 15%;
         border-radius: 10px;
         margin-bottom: 2%;
         background-color: #deecf1;
 
-        .mood_text {
+        .mood_items {
           display: flex;
           height: 10%;
           width: 90%;
@@ -632,14 +648,14 @@
         }
       }
 
-      .pain {
+      .pain_container {
         width: 100%;
         height: 15%;
         border-radius: 10px;
         margin-bottom: 2%;
         background-color: #f5f9ea;
 
-        .pain_text {
+        .pain_items {
           display: flex;
           height: 10%;
           width: 50%;
@@ -662,14 +678,14 @@
         }
       }
 
-      .sleep {
+      .sleep_container {
         width: 100%;
         height: 15%;
         border-radius: 10px;
         margin-bottom: 2%;
         background-color: #f3e4f6;
 
-        .sleep_text {
+        .sleep_items {
           display: flex;
           height: 10%;
           margin: 0;
@@ -691,14 +707,14 @@
         }
       }
 
-      .stress {
+      .stress_container {
         width: 100%;
         height: 15%;
         border-radius: 10px;
         margin-bottom: 2%;
         background-color: #e9edfe;
 
-        .stress_text {
+        .stress_items {
           display: flex;
           height: 10%;
           margin: 0;
@@ -719,6 +735,10 @@
           }
         }
       }
+    }
+
+    .button_block {
+      width: 40%;
     }
   }
 }

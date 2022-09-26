@@ -219,85 +219,28 @@ body {
   margin: 0;
 }
 
-header .submit_button {
-  height: 20%;
-  width: 15%;
+.submit_button {
+  width: 100%;
   border-radius: 10px;
-  margin: 2rem 1rem;
   font-weight: 200;
   line-height: 3rem;
   font-size: 1rem;
+  padding: 0 1%;
   border: #ff9900 solid 1px;
   text-transform: uppercase;
   background-color: #ff9900;
   color: white;
   cursor: pointer;
 }
-
-#hero .hero_title .hero_button-price .submit_button {
-  height: 30%;
-  width: 35%;
-  border-radius: 10px;
-  padding: 0;
-  border: #ff9900 solid 1px;
-  margin: 2% 0;
-  font-weight: 200;
-  line-height: 3rem;
-  font-size: 1rem;
-  text-transform: uppercase;
-  background-color: #ff9900;
+.submit_button a {
   color: white;
-  cursor: pointer;
+  text-decoration: none;
+  text-transform: uppercase;
 }
-#hero .hero_title .hero_button-price .submit_button .fa-circle-chevron-right {
+.submit_button i {
   margin-left: 5%;
 }
 
-#analyze .submit_button {
-  width: 20%;
-  border-radius: 10px;
-  padding: 0;
-  border: #ff9900 solid 1px;
-  margin: 0 40%;
-  font-weight: 200;
-  line-height: 3rem;
-  font-size: 1rem;
-  text-transform: uppercase;
-  background-color: #ff9900;
-  color: white;
-  cursor: pointer;
-}
-#analyze .submit_button .fa-circle-chevron-right {
-  margin-left: 5%;
-}
-
-@media (max-width: 767px) {
-  header .header_container .submit_button {
-    width: 40%;
-  }
-  #hero .hero_title .hero_button-price .submit_button {
-    width: 35%;
-  }
-}
-@media (min-width: 768px) and (max-width: 991px) {
-  header .header_container .submit_button {
-    height: 20%;
-    width: 20%;
-    border-radius: 10px;
-    margin: 0 0 2rem;
-  }
-  #hero .hero_title .hero_button-price .submit_button {
-    width: 35%;
-  }
-}
-@media (min-width: 992px) and (max-width: 1199px) {
-  header .header_container .submit_button {
-    width: 20%;
-  }
-  #hero .hero_title .hero_button-price .submit_button {
-    width: 25%;
-  }
-}
 header {
   width: 100%;
   border-bottom: #e8e9ea solid 1px;
@@ -340,12 +283,19 @@ header .header_container nav ul li a:hover {
   border-bottom: blue solid 3px;
   cursor: pointer;
 }
+header .header_container .button_block {
+  width: 15%;
+}
 
 @media (max-width: 767px) {
   header .header_container {
     flex-direction: column;
     height: auto;
     flex-wrap: wrap;
+  }
+  header .header_container .button_block {
+    width: 20%;
+    margin-bottom: 2%;
   }
   header .logo {
     width: 50%;
@@ -413,6 +363,10 @@ header .header_container nav ul li a:hover {
     border-bottom: blue solid 3px;
     cursor: pointer;
   }
+  header .header_container .button_block {
+    width: 20%;
+    margin-bottom: 2%;
+  }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
   header .header_container {
@@ -455,6 +409,9 @@ header .header_container nav ul li a:hover {
     color: #434a54;
     border-bottom: blue solid 3px;
     cursor: pointer;
+  }
+  header .header_container .button_block {
+    width: 20%;
   }
 }
 #hero {
@@ -511,6 +468,10 @@ header .header_container nav ul li a:hover {
   width: 80%;
   margin: 3% 0;
   flex-direction: row;
+  align-items: center;
+}
+#hero .hero_title .hero_button-price .button_block {
+  width: 35%;
 }
 #hero .hero_title .hero_button-price .price_block {
   display: flex;
@@ -701,14 +662,14 @@ header .header_container nav ul li a:hover {
 #analyze .human_analyze {
   width: 50%;
 }
-#analyze .human_analyze .blood {
+#analyze .human_analyze .blood_container {
   width: 70%;
   height: 15%;
   border-radius: 10px;
   margin-bottom: 2%;
   background-color: #fff3e0;
 }
-#analyze .human_analyze .blood .blood_text {
+#analyze .human_analyze .blood_container .blood_items {
   display: flex;
   height: 10%;
   width: 50%;
@@ -716,25 +677,25 @@ header .header_container nav ul li a:hover {
   padding: 3% 0 0;
   flex-direction: row;
 }
-#analyze .human_analyze .blood .blood_text a {
+#analyze .human_analyze .blood_container .blood_items a {
   margin: 1% 0 0 2%;
   text-decoration: none;
   color: black;
   font-size: 2rem;
 }
-#analyze .human_analyze .blood .blood_text img {
+#analyze .human_analyze .blood_container .blood_items img {
   width: 47px;
   height: 47px;
   margin: 0 3% 0 4%;
 }
-#analyze .human_analyze .mood {
+#analyze .human_analyze .mood_container {
   width: 70%;
   height: 15%;
   border-radius: 10px;
   margin-bottom: 2%;
   background-color: #deecf1;
 }
-#analyze .human_analyze .mood .mood_text {
+#analyze .human_analyze .mood_container .mood_items {
   display: flex;
   height: 10%;
   width: 80%;
@@ -742,25 +703,25 @@ header .header_container nav ul li a:hover {
   padding: 3% 0 0;
   flex-direction: row;
 }
-#analyze .human_analyze .mood .mood_text a {
+#analyze .human_analyze .mood_container .mood_items a {
   margin: 1% 0 0 0;
   text-decoration: none;
   color: black;
   font-size: 2rem;
 }
-#analyze .human_analyze .mood .mood_text img {
+#analyze .human_analyze .mood_container .mood_items img {
   width: 47px;
   height: 47px;
   margin: 0 3% 0 2%;
 }
-#analyze .human_analyze .pain {
+#analyze .human_analyze .pain_container {
   width: 70%;
   height: 15%;
   border-radius: 10px;
   margin-bottom: 2%;
   background-color: #f5f9ea;
 }
-#analyze .human_analyze .pain .pain_text {
+#analyze .human_analyze .pain_container .pain_items {
   display: flex;
   height: 10%;
   width: 50%;
@@ -768,25 +729,25 @@ header .header_container nav ul li a:hover {
   padding: 3% 0 0;
   flex-direction: row;
 }
-#analyze .human_analyze .pain .pain_text a {
+#analyze .human_analyze .pain_container .pain_items a {
   margin: 1% 0 0 2%;
   text-decoration: none;
   color: black;
   font-size: 2rem;
 }
-#analyze .human_analyze .pain .pain_text img {
+#analyze .human_analyze .pain_container .pain_items img {
   width: 47px;
   height: 47px;
   margin: 0 3% 0 4%;
 }
-#analyze .human_analyze .sleep {
+#analyze .human_analyze .sleep_container {
   width: 70%;
   height: 15%;
   border-radius: 10px;
   margin-bottom: 2%;
   background-color: #f3e4f6;
 }
-#analyze .human_analyze .sleep .sleep_text {
+#analyze .human_analyze .sleep_container .sleep_items {
   display: flex;
   height: 10%;
   width: 50%;
@@ -794,25 +755,25 @@ header .header_container nav ul li a:hover {
   padding: 3% 0 0;
   flex-direction: row;
 }
-#analyze .human_analyze .sleep .sleep_text a {
+#analyze .human_analyze .sleep_container .sleep_items a {
   margin: 1% 0 0 2%;
   text-decoration: none;
   color: black;
   font-size: 2rem;
 }
-#analyze .human_analyze .sleep .sleep_text img {
+#analyze .human_analyze .sleep_container .sleep_items img {
   width: 47px;
   height: 47px;
   margin: 0 3% 0 4%;
 }
-#analyze .human_analyze .stress {
+#analyze .human_analyze .stress_container {
   width: 70%;
   height: 15%;
   border-radius: 10px;
   margin-bottom: 2%;
   background-color: #e9edfe;
 }
-#analyze .human_analyze .stress .stress_text {
+#analyze .human_analyze .stress_container .stress_items {
   display: flex;
   height: 10%;
   width: 50%;
@@ -820,16 +781,20 @@ header .header_container nav ul li a:hover {
   padding: 3% 0 0;
   flex-direction: row;
 }
-#analyze .human_analyze .stress .stress_text a {
+#analyze .human_analyze .stress_container .stress_items a {
   margin: 1% 0 0 2%;
   text-decoration: none;
   color: black;
   font-size: 2rem;
 }
-#analyze .human_analyze .stress .stress_text img {
+#analyze .human_analyze .stress_container .stress_items img {
   width: 47px;
   height: 47px;
   margin: 0 3% 0 4%;
+}
+#analyze .button_block {
+  max-width: 300px;
+  width: 25%;
 }
 
 @media (max-width: 767px) {
@@ -840,6 +805,7 @@ header .header_container nav ul li a:hover {
     flex-wrap: wrap;
     justify-content: center;
     flex-direction: column;
+    align-items: center;
   }
   #analyze h1 {
     width: 100%;
@@ -860,14 +826,14 @@ header .header_container nav ul li a:hover {
     margin: 0 15%;
     flex-wrap: wrap;
   }
-  #analyze .human_analyze .blood {
+  #analyze .human_analyze .blood_container {
     width: 100%;
     height: 15%;
     border-radius: 10px;
     margin-bottom: 2%;
     background-color: #fff3e0;
   }
-  #analyze .human_analyze .blood .blood_text {
+  #analyze .human_analyze .blood_container .blood_items {
     display: flex;
     height: 10%;
     width: 70%;
@@ -875,25 +841,25 @@ header .header_container nav ul li a:hover {
     padding: 1% 0 0;
     flex-direction: row;
   }
-  #analyze .human_analyze .blood .blood_text a {
+  #analyze .human_analyze .blood_container .blood_items a {
     margin: 1% 0 0 2%;
     text-decoration: none;
     color: black;
     font-size: 2rem;
   }
-  #analyze .human_analyze .blood .blood_text img {
+  #analyze .human_analyze .blood_container .blood_items img {
     width: 47px;
     height: 47px;
     margin: 0 3% 0 4%;
   }
-  #analyze .human_analyze .mood {
+  #analyze .human_analyze .mood_container {
     width: 100%;
     height: 15%;
     border-radius: 10px;
     margin-bottom: 2%;
     background-color: #deecf1;
   }
-  #analyze .human_analyze .mood .mood_text {
+  #analyze .human_analyze .mood_container .mood_items {
     display: flex;
     height: 10%;
     width: 90%;
@@ -901,25 +867,25 @@ header .header_container nav ul li a:hover {
     padding: 1% 0;
     flex-direction: row;
   }
-  #analyze .human_analyze .mood .mood_text a {
+  #analyze .human_analyze .mood_container .mood_items a {
     margin: 1% 0 0 0;
     text-decoration: none;
     color: black;
     font-size: 2rem;
   }
-  #analyze .human_analyze .mood .mood_text img {
+  #analyze .human_analyze .mood_container .mood_items img {
     width: 47px;
     height: 47px;
     margin: 0 3% 0 2%;
   }
-  #analyze .human_analyze .pain {
+  #analyze .human_analyze .pain_container {
     width: 100%;
     height: 15%;
     border-radius: 10px;
     margin-bottom: 2%;
     background-color: #f5f9ea;
   }
-  #analyze .human_analyze .pain .pain_text {
+  #analyze .human_analyze .pain_container .pain_items {
     display: flex;
     height: 10%;
     width: 50%;
@@ -927,66 +893,69 @@ header .header_container nav ul li a:hover {
     padding: 1% 0 0;
     flex-direction: row;
   }
-  #analyze .human_analyze .pain .pain_text a {
+  #analyze .human_analyze .pain_container .pain_items a {
     margin: 1% 0 0 2%;
     text-decoration: none;
     color: black;
     font-size: 2rem;
   }
-  #analyze .human_analyze .pain .pain_text img {
+  #analyze .human_analyze .pain_container .pain_items img {
     width: 47px;
     height: 47px;
     margin: 0 3% 0 4%;
   }
-  #analyze .human_analyze .sleep {
+  #analyze .human_analyze .sleep_container {
     width: 100%;
     height: 15%;
     border-radius: 10px;
     margin-bottom: 2%;
     background-color: #f3e4f6;
   }
-  #analyze .human_analyze .sleep .sleep_text {
+  #analyze .human_analyze .sleep_container .sleep_items {
     display: flex;
     height: 10%;
     margin: 0;
     padding: 1% 0 0;
     flex-direction: row;
   }
-  #analyze .human_analyze .sleep .sleep_text a {
+  #analyze .human_analyze .sleep_container .sleep_items a {
     margin: 1% 0 0 2%;
     text-decoration: none;
     color: black;
     font-size: 2rem;
   }
-  #analyze .human_analyze .sleep .sleep_text img {
+  #analyze .human_analyze .sleep_container .sleep_items img {
     width: 47px;
     height: 47px;
     margin: 0 3% 0 4%;
   }
-  #analyze .human_analyze .stress {
+  #analyze .human_analyze .stress_container {
     width: 100%;
     height: 15%;
     border-radius: 10px;
     margin-bottom: 2%;
     background-color: #e9edfe;
   }
-  #analyze .human_analyze .stress .stress_text {
+  #analyze .human_analyze .stress_container .stress_items {
     display: flex;
     height: 10%;
     margin: 0;
     padding: 1% 0 0;
     flex-direction: row;
   }
-  #analyze .human_analyze .stress .stress_text a {
+  #analyze .human_analyze .stress_container .stress_items a {
     margin: 1% 0 0 2%;
     text-decoration: none;
     color: black;
     font-size: 2rem;
   }
-  #analyze .human_analyze .stress .stress_text img {
+  #analyze .human_analyze .stress_container .stress_items img {
     width: 47px;
     height: 47px;
     margin: 0 3% 0 4%;
+  }
+  #analyze .button_block {
+    width: 40%;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
@@ -997,6 +966,7 @@ header .header_container nav ul li a:hover {
     flex-wrap: wrap;
     justify-content: center;
     flex-direction: column;
+    align-items: center;
   }
   #analyze h1 {
     width: 100%;
@@ -1017,14 +987,14 @@ header .header_container nav ul li a:hover {
     margin: 0 15%;
     flex-wrap: wrap;
   }
-  #analyze .human_analyze .blood {
+  #analyze .human_analyze .blood_container {
     width: 100%;
     height: 15%;
     border-radius: 10px;
     margin-bottom: 2%;
     background-color: #fff3e0;
   }
-  #analyze .human_analyze .blood .blood_text {
+  #analyze .human_analyze .blood_container .blood_items {
     display: flex;
     height: 10%;
     width: 70%;
@@ -1032,25 +1002,25 @@ header .header_container nav ul li a:hover {
     padding: 1% 0 0;
     flex-direction: row;
   }
-  #analyze .human_analyze .blood .blood_text a {
+  #analyze .human_analyze .blood_container .blood_items a {
     margin: 1% 0 0 2%;
     text-decoration: none;
     color: black;
     font-size: 2rem;
   }
-  #analyze .human_analyze .blood .blood_text img {
+  #analyze .human_analyze .blood_container .blood_items img {
     width: 47px;
     height: 47px;
     margin: 0 3% 0 4%;
   }
-  #analyze .human_analyze .mood {
+  #analyze .human_analyze .mood_container {
     width: 100%;
     height: 15%;
     border-radius: 10px;
     margin-bottom: 2%;
     background-color: #deecf1;
   }
-  #analyze .human_analyze .mood .mood_text {
+  #analyze .human_analyze .mood_container .mood_items {
     display: flex;
     height: 10%;
     width: 90%;
@@ -1058,25 +1028,25 @@ header .header_container nav ul li a:hover {
     padding: 1% 0;
     flex-direction: row;
   }
-  #analyze .human_analyze .mood .mood_text a {
+  #analyze .human_analyze .mood_container .mood_items a {
     margin: 1% 0 0 0;
     text-decoration: none;
     color: black;
     font-size: 2rem;
   }
-  #analyze .human_analyze .mood .mood_text img {
+  #analyze .human_analyze .mood_container .mood_items img {
     width: 47px;
     height: 47px;
     margin: 0 3% 0 2%;
   }
-  #analyze .human_analyze .pain {
+  #analyze .human_analyze .pain_container {
     width: 100%;
     height: 15%;
     border-radius: 10px;
     margin-bottom: 2%;
     background-color: #f5f9ea;
   }
-  #analyze .human_analyze .pain .pain_text {
+  #analyze .human_analyze .pain_container .pain_items {
     display: flex;
     height: 10%;
     width: 50%;
@@ -1084,66 +1054,69 @@ header .header_container nav ul li a:hover {
     padding: 1% 0 0;
     flex-direction: row;
   }
-  #analyze .human_analyze .pain .pain_text a {
+  #analyze .human_analyze .pain_container .pain_items a {
     margin: 1% 0 0 2%;
     text-decoration: none;
     color: black;
     font-size: 2rem;
   }
-  #analyze .human_analyze .pain .pain_text img {
+  #analyze .human_analyze .pain_container .pain_items img {
     width: 47px;
     height: 47px;
     margin: 0 3% 0 4%;
   }
-  #analyze .human_analyze .sleep {
+  #analyze .human_analyze .sleep_container {
     width: 100%;
     height: 15%;
     border-radius: 10px;
     margin-bottom: 2%;
     background-color: #f3e4f6;
   }
-  #analyze .human_analyze .sleep .sleep_text {
+  #analyze .human_analyze .sleep_container .sleep_items {
     display: flex;
     height: 10%;
     margin: 0;
     padding: 1% 0 0;
     flex-direction: row;
   }
-  #analyze .human_analyze .sleep .sleep_text a {
+  #analyze .human_analyze .sleep_container .sleep_items a {
     margin: 1% 0 0 2%;
     text-decoration: none;
     color: black;
     font-size: 2rem;
   }
-  #analyze .human_analyze .sleep .sleep_text img {
+  #analyze .human_analyze .sleep_container .sleep_items img {
     width: 47px;
     height: 47px;
     margin: 0 3% 0 4%;
   }
-  #analyze .human_analyze .stress {
+  #analyze .human_analyze .stress_container {
     width: 100%;
     height: 15%;
     border-radius: 10px;
     margin-bottom: 2%;
     background-color: #e9edfe;
   }
-  #analyze .human_analyze .stress .stress_text {
+  #analyze .human_analyze .stress_container .stress_items {
     display: flex;
     height: 10%;
     margin: 0;
     padding: 1% 0 0;
     flex-direction: row;
   }
-  #analyze .human_analyze .stress .stress_text a {
+  #analyze .human_analyze .stress_container .stress_items a {
     margin: 1% 0 0 2%;
     text-decoration: none;
     color: black;
     font-size: 2rem;
   }
-  #analyze .human_analyze .stress .stress_text img {
+  #analyze .human_analyze .stress_container .stress_items img {
     width: 47px;
     height: 47px;
     margin: 0 3% 0 4%;
+  }
+  #analyze .button_block {
+    width: 40%;
   }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
@@ -1154,6 +1127,7 @@ header .header_container nav ul li a:hover {
     flex-wrap: wrap;
     justify-content: center;
     flex-direction: column;
+    align-items: center;
   }
   #analyze h1 {
     width: 100%;
@@ -1167,21 +1141,22 @@ header .header_container nav ul li a:hover {
     text-align: center;
   }
   #analyze .img_analyze {
-    margin: 0 15% 2%;
+    width: 70%;
+    margin: 0 15%;
   }
   #analyze .human_analyze {
     width: 70%;
     margin: 0 15%;
     flex-wrap: wrap;
   }
-  #analyze .human_analyze .blood {
+  #analyze .human_analyze .blood_container {
     width: 100%;
     height: 15%;
     border-radius: 10px;
     margin-bottom: 2%;
     background-color: #fff3e0;
   }
-  #analyze .human_analyze .blood .blood_text {
+  #analyze .human_analyze .blood_container .blood_items {
     display: flex;
     height: 10%;
     width: 70%;
@@ -1189,25 +1164,25 @@ header .header_container nav ul li a:hover {
     padding: 1% 0 0;
     flex-direction: row;
   }
-  #analyze .human_analyze .blood .blood_text a {
+  #analyze .human_analyze .blood_container .blood_items a {
     margin: 1% 0 0 2%;
     text-decoration: none;
     color: black;
     font-size: 2rem;
   }
-  #analyze .human_analyze .blood .blood_text img {
+  #analyze .human_analyze .blood_container .blood_items img {
     width: 47px;
     height: 47px;
     margin: 0 3% 0 4%;
   }
-  #analyze .human_analyze .mood {
+  #analyze .human_analyze .mood_container {
     width: 100%;
     height: 15%;
     border-radius: 10px;
     margin-bottom: 2%;
     background-color: #deecf1;
   }
-  #analyze .human_analyze .mood .mood_text {
+  #analyze .human_analyze .mood_container .mood_items {
     display: flex;
     height: 10%;
     width: 90%;
@@ -1215,25 +1190,25 @@ header .header_container nav ul li a:hover {
     padding: 1% 0;
     flex-direction: row;
   }
-  #analyze .human_analyze .mood .mood_text a {
+  #analyze .human_analyze .mood_container .mood_items a {
     margin: 1% 0 0 0;
     text-decoration: none;
     color: black;
     font-size: 2rem;
   }
-  #analyze .human_analyze .mood .mood_text img {
+  #analyze .human_analyze .mood_container .mood_items img {
     width: 47px;
     height: 47px;
     margin: 0 3% 0 2%;
   }
-  #analyze .human_analyze .pain {
+  #analyze .human_analyze .pain_container {
     width: 100%;
     height: 15%;
     border-radius: 10px;
     margin-bottom: 2%;
     background-color: #f5f9ea;
   }
-  #analyze .human_analyze .pain .pain_text {
+  #analyze .human_analyze .pain_container .pain_items {
     display: flex;
     height: 10%;
     width: 50%;
@@ -1241,65 +1216,68 @@ header .header_container nav ul li a:hover {
     padding: 1% 0 0;
     flex-direction: row;
   }
-  #analyze .human_analyze .pain .pain_text a {
+  #analyze .human_analyze .pain_container .pain_items a {
     margin: 1% 0 0 2%;
     text-decoration: none;
     color: black;
     font-size: 2rem;
   }
-  #analyze .human_analyze .pain .pain_text img {
+  #analyze .human_analyze .pain_container .pain_items img {
     width: 47px;
     height: 47px;
     margin: 0 3% 0 4%;
   }
-  #analyze .human_analyze .sleep {
+  #analyze .human_analyze .sleep_container {
     width: 100%;
     height: 15%;
     border-radius: 10px;
     margin-bottom: 2%;
     background-color: #f3e4f6;
   }
-  #analyze .human_analyze .sleep .sleep_text {
+  #analyze .human_analyze .sleep_container .sleep_items {
     display: flex;
     height: 10%;
     margin: 0;
     padding: 1% 0 0;
     flex-direction: row;
   }
-  #analyze .human_analyze .sleep .sleep_text a {
+  #analyze .human_analyze .sleep_container .sleep_items a {
     margin: 1% 0 0 2%;
     text-decoration: none;
     color: black;
     font-size: 2rem;
   }
-  #analyze .human_analyze .sleep .sleep_text img {
+  #analyze .human_analyze .sleep_container .sleep_items img {
     width: 47px;
     height: 47px;
     margin: 0 3% 0 4%;
   }
-  #analyze .human_analyze .stress {
+  #analyze .human_analyze .stress_container {
     width: 100%;
     height: 15%;
     border-radius: 10px;
     margin-bottom: 2%;
     background-color: #e9edfe;
   }
-  #analyze .human_analyze .stress .stress_text {
+  #analyze .human_analyze .stress_container .stress_items {
     display: flex;
     height: 10%;
     margin: 0;
     padding: 1% 0 0;
     flex-direction: row;
   }
-  #analyze .human_analyze .stress .stress_text a {
+  #analyze .human_analyze .stress_container .stress_items a {
     margin: 1% 0 0 2%;
     text-decoration: none;
     color: black;
     font-size: 2rem;
   }
-  #analyze .human_analyze .stress .stress_text img {
+  #analyze .human_analyze .stress_container .stress_items img {
     width: 47px;
     height: 47px;
     margin: 0 3% 0 4%;
+  }
+  #analyze .button_block {
+    width: 40%;
   }
 }/*# sourceMappingURL=index.css.map */
