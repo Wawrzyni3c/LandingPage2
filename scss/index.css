@@ -220,7 +220,7 @@ body {
 }
 
 .submit_button {
-  width: 100%;
+  min-width: 250px;
   border-radius: 10px;
   font-weight: 200;
   line-height: 3rem;
@@ -294,6 +294,7 @@ header .header_container .button_block {
     flex-wrap: wrap;
   }
   header .header_container .button_block {
+    min-width: 250px;
     width: 20%;
     margin-bottom: 2%;
   }
@@ -364,6 +365,7 @@ header .header_container .button_block {
     cursor: pointer;
   }
   header .header_container .button_block {
+    min-width: 250px;
     width: 20%;
     margin-bottom: 2%;
   }
@@ -411,6 +413,7 @@ header .header_container .button_block {
     cursor: pointer;
   }
   header .header_container .button_block {
+    min-width: 250px;
     width: 20%;
   }
 }
@@ -471,6 +474,7 @@ header .header_container .button_block {
   align-items: center;
 }
 #hero .hero_title .hero_button-price .button_block {
+  min-width: 250px;
   width: 35%;
 }
 #hero .hero_title .hero_button-price .price_block {
@@ -524,6 +528,9 @@ header .header_container .button_block {
     text-decoration: none;
     cursor: pointer;
   }
+  #hero .hero_title .button_block {
+    min-width: 250px;
+  }
   #hero .hero_img {
     display: none;
   }
@@ -545,6 +552,9 @@ header .header_container .button_block {
     text-decoration: none;
     cursor: pointer;
   }
+  #hero .hero_title .button_block {
+    min-width: 250px;
+  }
   #hero .hero_img {
     display: none;
   }
@@ -565,6 +575,9 @@ header .header_container .button_block {
     color: blue;
     text-decoration: none;
     cursor: pointer;
+  }
+  #hero .hero_title .button_block {
+    min-width: 250px;
   }
   #hero .hero_img {
     display: none;

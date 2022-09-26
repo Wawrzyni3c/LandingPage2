@@ -60,6 +60,7 @@ header {
       flex-wrap: wrap;
 
       .button_block {
+        min-width: 250px;
         width: 20%;
         margin-bottom: 2%;
       }
@@ -146,6 +147,7 @@ header {
       }
 
       .button_block {
+        min-width: 250px;
         width: 20%;
         margin-bottom: 2%;
       }
@@ -203,6 +205,7 @@ header {
       }
 
       .button_block {
+        min-width: 250px;
         width: 20%;
       }
     }
