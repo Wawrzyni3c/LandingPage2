@@ -58,6 +58,12 @@
       width: 80%;
       margin: 3% 0;
       flex-direction: row;
+      align-items: center;
+
+      .button_block {
+        min-width: 250px;
+        width: 35%;
+      }
 
       .price_block {
         display: flex;
@@ -119,6 +125,9 @@
           }
         }
       }
+      .button_block {
+        min-width: 250px;
+      }
     }
 
     .hero_img {
@@ -143,6 +152,10 @@
             cursor: pointer;
           }
         }
+      }
+
+      .button_block {
+        min-width: 250px;
       }
     }
 
@@ -169,6 +182,10 @@
             cursor: pointer;
           }
         }
+      }
+
+      .button_block {
+        min-width: 250px;
       }
     }
 
