@@ -10,7 +10,7 @@
   flex: 100%;
 }
 
-[class*=col-] {
+[class*="col-"] {
   display: inline-flex;
   box-sizing: border-box;
 }
@@ -506,7 +506,7 @@ header .header_container .button_block {
   font-size: 0;
   flex-wrap: wrap;
   -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
 }
 #hero .hero_img img {
   height: 65%;
@@ -1293,4 +1293,4 @@ header .header_container .button_block {
   #analyze .button_block {
     width: 40%;
   }
-}/*# sourceMappingURL=index.css.map */
+} /*# sourceMappingURL=index.css.map */
