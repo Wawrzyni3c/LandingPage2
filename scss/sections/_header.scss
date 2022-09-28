@@ -1,0 +1,213 @@
+header {
+  width: 100%;
+  border-bottom: #e8e9ea solid 1px;
+
+  .header_container {
+    display: flex;
+    min-height: 160px;
+    width: 80%;
+    margin: 0 10%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    .logo {
+      display: flex;
+    }
+
+    nav {
+      width: 50%;
+
+      ul {
+        display: flex;
+        padding: 0;
+        margin: 0 5%;
+        color: black;
+        list-style: none;
+        justify-content: space-between;
+
+        li {
+          min-width: 60px;
+
+          a {
+            font-size: 1.2rem;
+            text-decoration: none;
+            text-transform: uppercase;
+            color: black;
+
+            &:hover {
+              font-weight: 400;
+              color: $primary-color-black;
+              border-bottom: blue solid 3px;
+              cursor: pointer;
+            }
+          }
+        }
+      }
+    }
+
+    .button_block {
+      width: 15%;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  header {
+    .header_container {
+      flex-direction: column;
+      height: auto;
+      flex-wrap: wrap;
+
+      .button_block {
+        min-width: 250px;
+        width: 20%;
+        margin-bottom: 2%;
+      }
+    }
+
+    .logo {
+      width: 50%;
+      margin-top: 2%;
+      justify-content: center;
+    }
+
+    nav {
+      display: flex;
+      max-width: 30%;
+
+      ul {
+        display: flex;
+        width: 100%;
+        padding: 0;
+        justify-content: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+
+        li {
+          display: flex;
+          margin: 10% 0;
+          justify-content: center;
+
+          a {
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  header {
+    .header_container {
+      display: flex;
+      min-height: 160px;
+      width: 80%;
+      border: 0;
+      margin: 0 10%;
+      justify-content: center;
+      flex-wrap: wrap;
+
+      .logo {
+        width: 100%;
+        justify-content: center;
+      }
+
+      nav {
+        width: 100%;
+        margin: 5% 0;
+
+        ul {
+          display: flex;
+          padding: 0;
+
+          color: black;
+          list-style: none;
+          justify-content: space-between;
+
+          li {
+            min-width: 60px;
+
+            a {
+              font-size: 1.2rem;
+              text-decoration: none;
+              text-transform: uppercase;
+              color: black;
+
+              &:hover {
+                font-weight: 400;
+                color: $primary-color-black;
+                border-bottom: blue solid 3px;
+                cursor: pointer;
+              }
+            }
+          }
+        }
+      }
+
+      .button_block {
+        min-width: 250px;
+        width: 20%;
+        margin-bottom: 2%;
+      }
+    }
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  header {
+    .header_container {
+      display: flex;
+      min-height: 160px;
+      width: 90%;
+      margin: 0 5%;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+
+      .logo {
+        display: flex;
+        width: 35%;
+      }
+
+      nav {
+        width: 65%;
+
+        ul {
+          display: flex;
+          padding: 0;
+          margin: 0 3%;
+          color: black;
+          list-style: none;
+          justify-content: space-between;
+
+          li {
+            min-width: 60px;
+            text-align: center;
+
+            a {
+              font-size: 1.2rem;
+              text-decoration: none;
+              text-transform: uppercase;
+              color: black;
+
+              &:hover {
+                font-weight: 400;
+                color: $primary-color-black;
+                border-bottom: blue solid 3px;
+                cursor: pointer;
+              }
+            }
+          }
+        }
+      }
+
+      .button_block {
+        min-width: 250px;
+        width: 20%;
+      }
+    }
+  }
+}
