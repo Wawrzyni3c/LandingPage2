@@ -3,7 +3,7 @@
   width: 80%;
   margin: 0 10%;
 
-  .ifo_text {
+  .info_text {
     width: 50%;
 
     h1 {
@@ -27,6 +27,7 @@
     }
   }
 }
+
 @media (max-width: 767px) {
   #dna_info {
     display: flex;
@@ -34,7 +35,7 @@
     flex-wrap: wrap;
     flex-direction: column;
 
-    .ifo_text {
+    .info_text {
       width: 100%;
       text-align: center;
       align-items: center;
@@ -51,6 +52,7 @@
     }
   }
 }
+
 @media (min-width: 768px) and (max-width: 991px) {
   #dna_info {
     display: flex;
@@ -58,7 +60,7 @@
     flex-wrap: wrap;
     flex-direction: column;
 
-    .ifo_text {
+    .info_text {
       width: 100%;
       text-align: center;
       align-items: center;

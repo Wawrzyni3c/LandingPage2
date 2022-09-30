@@ -363,11 +363,13 @@
         }
       }
     }
+
     .button_block {
       width: 40%;
     }
   }
 }
+
 @media (min-width: 768px) and (max-width: 991px) {
   #analyze {
     display: flex;

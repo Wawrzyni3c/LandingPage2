@@ -29,6 +29,7 @@
         }
       }
     }
+
     .hero_frame {
       display: flex;
       width: 70%;
@@ -53,6 +54,7 @@
         }
       }
     }
+
     .hero_button-price {
       display: flex;
       width: 80%;
@@ -93,6 +95,7 @@
       }
     }
   }
+
   .hero_img {
     width: 50%;
     bottom: 0;
@@ -112,6 +115,7 @@
   #hero {
     .hero_title {
       width: 100%;
+
       .hero_text {
         h1 {
           width: 100%;
@@ -125,6 +129,7 @@
           }
         }
       }
+
       .button_block {
         min-width: 250px;
       }
@@ -135,12 +140,15 @@
     }
   }
 }
+
 @media (min-width: 768px) and (max-width: 991px) {
   #hero {
     .hero_title {
       width: 100%;
+
       .hero_text {
         width: 70%;
+
         h1 {
           width: 100%;
           margin: 0 0 auto;
@@ -169,8 +177,10 @@
   #hero {
     .hero_title {
       width: 100%;
+
       .hero_text {
         width: 70%;
+
         h1 {
           width: 100%;
           margin: 0 0 auto;
