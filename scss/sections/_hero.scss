@@ -1,24 +1,18 @@
 #hero {
   display: flex;
-  max-height: 1080px;
   width: 90%;
-  margin: 0 0 0 10%;
-  flex-direction: row;
-  justify-content: space-between;
+  margin: 5% 0 0 10%;
 
   .hero_title {
     width: 50%;
+    flex-direction: column;
 
     .hero_text {
-      width: 100%;
-
       h3 {
-        margin-top: 10%;
         font-size: large;
       }
 
       h1 {
-        width: 100%;
         margin: 0 0 auto;
         font-size: 5rem;
 
@@ -32,17 +26,15 @@
 
     .hero_frame {
       display: flex;
-      width: 70%;
-      justify-content: space-between;
+      width: 80%;
       flex-wrap: wrap;
-      flex-direction: row;
 
       .frame_text {
         display: flex;
         height: 10%;
         width: 50%;
         margin: 2% 0;
-        flex-direction: row;
+        align-items: center;
 
         p {
           margin: 0 3%;
@@ -59,13 +51,7 @@
       display: flex;
       width: 80%;
       margin: 3% 0;
-      flex-direction: row;
       align-items: center;
-
-      .button_block {
-        min-width: 250px;
-        width: 35%;
-      }
 
       .price_block {
         display: flex;
@@ -95,18 +81,10 @@
       }
     }
   }
-
   .hero_img {
-    width: 50%;
-    bottom: 0;
-    font-size: 0;
-    flex-wrap: wrap;
-    object-fit: contain;
-
+    align-items: flex-end;
     img {
-      height: 65%;
-      margin-top: 35%;
-      width: 100%;
+      height: auto;
     }
   }
 }
@@ -114,24 +92,11 @@
 @media (max-width: 767px) {
   #hero {
     .hero_title {
-      width: 100%;
-
       .hero_text {
         h1 {
-          width: 100%;
-          margin: 0 0 auto;
-          font-size: 3.5rem;
-
-          a {
-            color: blue;
-            text-decoration: none;
-            cursor: pointer;
-          }
+          margin-bottom: 5%;
+          font-size: 3rem;
         }
-      }
-
-      .button_block {
-        min-width: 250px;
       }
     }
 
@@ -143,64 +108,33 @@
 
 @media (min-width: 768px) and (max-width: 991px) {
   #hero {
-    .hero_title {
-      width: 100%;
-
-      .hero_text {
-        width: 70%;
-
-        h1 {
-          width: 100%;
-          margin: 0 0 auto;
-          font-size: 2rem;
-
-          a {
-            color: blue;
-            text-decoration: none;
-            cursor: pointer;
+    width: 100%;
+    margin: 0;
+    .row {
+      justify-content: center;
+      .hero_title {
+        .hero_text {
+          h1 {
+            margin-bottom: 5%;
+            font-size: 3rem;
           }
         }
       }
-
-      .button_block {
-        min-width: 250px;
-      }
-    }
-
-    .hero_img {
-      display: none;
     }
   }
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
   #hero {
-    .hero_title {
-      width: 100%;
-
-      .hero_text {
-        width: 70%;
-
-        h1 {
-          width: 100%;
-          margin: 0 0 auto;
-          font-size: 2rem;
-
-          a {
-            color: blue;
-            text-decoration: none;
-            cursor: pointer;
+    .row {
+      .hero_title {
+        .hero_text {
+          h1 {
+            margin-bottom: 5%;
+            font-size: 2rem;
           }
         }
       }
-
-      .button_block {
-        min-width: 250px;
-      }
-    }
-
-    .hero_img {
-      display: none;
     }
   }
 }

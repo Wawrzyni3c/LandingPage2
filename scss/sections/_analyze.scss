@@ -1,237 +1,56 @@
 #analyze {
   display: flex;
   width: 100%;
+  height: 100%;
   margin: 5% 0 0;
-  flex-wrap: wrap;
+  align-items: center;
   justify-content: center;
+  color: black;
+  text-align: center;
+  box-sizing: border-box;
 
-  h1 {
-    width: 100%;
-    text-align: center;
-    font-size: 2rem;
-  }
-
-  p {
-    width: 36%;
-    margin: 2% 32% 4%;
-    font-size: 20px;
+  .row {
     justify-content: center;
-    text-align: center;
-  }
 
-  .img_analyze {
-    width: 50%;
-  }
-
-  .human_analyze {
-    width: 50%;
-
-    .blood_container {
-      width: 70%;
-      height: 15%;
-      border-radius: 10px;
-      margin-bottom: 2%;
-      background-color: #fff3e0;
-
-      .blood_items {
-        display: flex;
-        height: 10%;
-        width: 50%;
-        margin: 0;
-        padding: 3% 0 0;
-        flex-direction: row;
-
-        a {
-          margin: 1% 0 0 2%;
-          text-decoration: none;
-          color: black;
-          font-size: 2rem;
-        }
-
-        img {
-          width: 47px;
-          height: 47px;
-          margin: 0 3% 0 4%;
-        }
-      }
-    }
-
-    .mood_container {
-      width: 70%;
-      height: 15%;
-      border-radius: 10px;
-      margin-bottom: 2%;
-      background-color: #deecf1;
-
-      .mood_items {
-        display: flex;
-        height: 10%;
-        width: 80%;
-        margin: 0;
-        padding: 3% 0 0;
-        flex-direction: row;
-
-        a {
-          margin: 1% 0 0 0;
-          text-decoration: none;
-          color: black;
-          font-size: 2rem;
-        }
-
-        img {
-          width: 47px;
-          height: 47px;
-          margin: 0 3% 0 2%;
-        }
-      }
-    }
-
-    .pain_container {
-      width: 70%;
-      height: 15%;
-      border-radius: 10px;
-      margin-bottom: 2%;
-      background-color: #f5f9ea;
-
-      .pain_items {
-        display: flex;
-        height: 10%;
-        width: 50%;
-        margin: 0;
-        padding: 3% 0 0;
-        flex-direction: row;
-
-        a {
-          margin: 1% 0 0 2%;
-          text-decoration: none;
-          color: black;
-          font-size: 2rem;
-        }
-
-        img {
-          width: 47px;
-          height: 47px;
-          margin: 0 3% 0 4%;
-        }
-      }
-    }
-
-    .sleep_container {
-      width: 70%;
-      height: 15%;
-      border-radius: 10px;
-      margin-bottom: 2%;
-      background-color: #f3e4f6;
-
-      .sleep_items {
-        display: flex;
-        height: 10%;
-        width: 50%;
-        margin: 0;
-        padding: 3% 0 0;
-        flex-direction: row;
-
-        a {
-          margin: 1% 0 0 2%;
-          text-decoration: none;
-          color: black;
-          font-size: 2rem;
-        }
-
-        img {
-          width: 47px;
-          height: 47px;
-          margin: 0 3% 0 4%;
-        }
-      }
-    }
-
-    .stress_container {
-      width: 70%;
-      height: 15%;
-      border-radius: 10px;
-      margin-bottom: 2%;
-      background-color: #e9edfe;
-
-      .stress_items {
-        display: flex;
-        height: 10%;
-        width: 50%;
-        margin: 0;
-        padding: 3% 0 0;
-        flex-direction: row;
-
-        a {
-          margin: 1% 0 0 2%;
-          text-decoration: none;
-          color: black;
-          font-size: 2rem;
-        }
-
-        img {
-          width: 47px;
-          height: 47px;
-          margin: 0 3% 0 4%;
-        }
-      }
-    }
-  }
-
-  .button_block {
-    max-width: 300px;
-    width: 25%;
-  }
-}
-
-@media (max-width: 767px) {
-  #analyze {
-    display: flex;
-    width: 100%;
-    margin: 5% 0 0;
-    flex-wrap: wrap;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-
-    h1 {
+    header {
       width: 100%;
-      text-align: center;
-      font-size: 2rem;
+      border: none;
+      flex-direction: column;
+
+      h1 {
+        font-size: 2rem;
+        text-align: center;
+      }
+
+      p {
+        width: 100%;
+        font-size: 20px;
+        justify-content: center;
+        text-align: center;
+      }
     }
 
-    p {
-      width: 36%;
-      margin: 2% 32% 4%;
+    .analyze_components {
+      display: flex;
+      margin-top: 2%;
+      gap: 5%;
       justify-content: center;
-      text-align: center;
-    }
-
-    .img_analyze {
-      display: none;
-    }
-
-    .human_analyze {
-      width: 70%;
-      margin: 0 15%;
       flex-wrap: wrap;
 
-      .blood_container {
+      .human_analyze {
         width: 100%;
-        height: 15%;
-        border-radius: 10px;
-        margin-bottom: 2%;
-        background-color: #fff3e0;
+        padding: 0;
+        margin: 2% 0 0;
+        list-style-type: none;
 
-        .blood_items {
+        li {
           display: flex;
-          height: 10%;
-          width: 70%;
-          margin: 0;
-          padding: 1% 0 0;
-          flex-direction: row;
+          min-height: 80px;
+          border-radius: 10px;
+          margin-bottom: 2%;
+          align-items: center;
 
           a {
-            margin: 1% 0 0 2%;
             text-decoration: none;
             color: black;
             font-size: 2rem;
@@ -243,504 +62,26 @@
             margin: 0 3% 0 4%;
           }
         }
-      }
+        .blood_container {
+          background-color: #fff3e0;
+        }
 
-      .mood_container {
-        width: 100%;
-        height: 15%;
-        border-radius: 10px;
-        margin-bottom: 2%;
-        background-color: #deecf1;
+        .mood_container {
+          background-color: #deecf1;
+        }
 
-        .mood_items {
-          display: flex;
-          height: 10%;
-          width: 90%;
-          margin: 0;
-          padding: 1% 0;
-          flex-direction: row;
+        .pain_container {
+          background-color: #f5f9ea;
+        }
 
-          a {
-            margin: 1% 0 0 0;
-            text-decoration: none;
-            color: black;
-            font-size: 2rem;
-          }
+        .sleep_container {
+          background-color: #f3e4f6;
+        }
 
-          img {
-            width: 47px;
-            height: 47px;
-            margin: 0 3% 0 2%;
-          }
+        .stress_container {
+          background-color: #e9edfe;
         }
       }
-
-      .pain_container {
-        width: 100%;
-        height: 15%;
-        border-radius: 10px;
-        margin-bottom: 2%;
-        background-color: #f5f9ea;
-
-        .pain_items {
-          display: flex;
-          height: 10%;
-          width: 50%;
-          margin: 0;
-          padding: 1% 0 0;
-          flex-direction: row;
-
-          a {
-            margin: 1% 0 0 2%;
-            text-decoration: none;
-            color: black;
-            font-size: 2rem;
-          }
-
-          img {
-            width: 47px;
-            height: 47px;
-            margin: 0 3% 0 4%;
-          }
-        }
-      }
-
-      .sleep_container {
-        width: 100%;
-        height: 15%;
-        border-radius: 10px;
-        margin-bottom: 2%;
-        background-color: #f3e4f6;
-
-        .sleep_items {
-          display: flex;
-          height: 10%;
-          margin: 0;
-          padding: 1% 0 0;
-          flex-direction: row;
-
-          a {
-            margin: 1% 0 0 2%;
-            text-decoration: none;
-            color: black;
-            font-size: 2rem;
-          }
-
-          img {
-            width: 47px;
-            height: 47px;
-            margin: 0 3% 0 4%;
-          }
-        }
-      }
-
-      .stress_container {
-        width: 100%;
-        height: 15%;
-        border-radius: 10px;
-        margin-bottom: 2%;
-        background-color: #e9edfe;
-
-        .stress_items {
-          display: flex;
-          height: 10%;
-          margin: 0;
-          padding: 1% 0 0;
-          flex-direction: row;
-
-          a {
-            margin: 1% 0 0 2%;
-            text-decoration: none;
-            color: black;
-            font-size: 2rem;
-          }
-
-          img {
-            width: 47px;
-            height: 47px;
-            margin: 0 3% 0 4%;
-          }
-        }
-      }
-    }
-
-    .button_block {
-      width: 40%;
-    }
-  }
-}
-
-@media (min-width: 768px) and (max-width: 991px) {
-  #analyze {
-    display: flex;
-    width: 100%;
-    margin: 5% 0 0;
-    flex-wrap: wrap;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-
-    h1 {
-      width: 100%;
-      text-align: center;
-      font-size: 2rem;
-    }
-
-    p {
-      width: 36%;
-      margin: 2% 32% 4%;
-      justify-content: center;
-      text-align: center;
-    }
-
-    .img_analyze {
-      display: none;
-    }
-
-    .human_analyze {
-      width: 70%;
-      margin: 0 15%;
-      flex-wrap: wrap;
-
-      .blood_container {
-        width: 100%;
-        height: 15%;
-        border-radius: 10px;
-        margin-bottom: 2%;
-        background-color: #fff3e0;
-
-        .blood_items {
-          display: flex;
-          height: 10%;
-          width: 70%;
-          margin: 0;
-          padding: 1% 0 0;
-          flex-direction: row;
-
-          a {
-            margin: 1% 0 0 2%;
-            text-decoration: none;
-            color: black;
-            font-size: 2rem;
-          }
-
-          img {
-            width: 47px;
-            height: 47px;
-            margin: 0 3% 0 4%;
-          }
-        }
-      }
-
-      .mood_container {
-        width: 100%;
-        height: 15%;
-        border-radius: 10px;
-        margin-bottom: 2%;
-        background-color: #deecf1;
-
-        .mood_items {
-          display: flex;
-          height: 10%;
-          width: 90%;
-          margin: 0;
-          padding: 1% 0;
-          flex-direction: row;
-
-          a {
-            margin: 1% 0 0 0;
-            text-decoration: none;
-            color: black;
-            font-size: 2rem;
-          }
-
-          img {
-            width: 47px;
-            height: 47px;
-            margin: 0 3% 0 2%;
-          }
-        }
-      }
-
-      .pain_container {
-        width: 100%;
-        height: 15%;
-        border-radius: 10px;
-        margin-bottom: 2%;
-        background-color: #f5f9ea;
-
-        .pain_items {
-          display: flex;
-          height: 10%;
-          width: 50%;
-          margin: 0;
-          padding: 1% 0 0;
-          flex-direction: row;
-
-          a {
-            margin: 1% 0 0 2%;
-            text-decoration: none;
-            color: black;
-            font-size: 2rem;
-          }
-
-          img {
-            width: 47px;
-            height: 47px;
-            margin: 0 3% 0 4%;
-          }
-        }
-      }
-
-      .sleep_container {
-        width: 100%;
-        height: 15%;
-        border-radius: 10px;
-        margin-bottom: 2%;
-        background-color: #f3e4f6;
-
-        .sleep_items {
-          display: flex;
-          height: 10%;
-          margin: 0;
-          padding: 1% 0 0;
-          flex-direction: row;
-
-          a {
-            margin: 1% 0 0 2%;
-            text-decoration: none;
-            color: black;
-            font-size: 2rem;
-          }
-
-          img {
-            width: 47px;
-            height: 47px;
-            margin: 0 3% 0 4%;
-          }
-        }
-      }
-
-      .stress_container {
-        width: 100%;
-        height: 15%;
-        border-radius: 10px;
-        margin-bottom: 2%;
-        background-color: #e9edfe;
-
-        .stress_items {
-          display: flex;
-          height: 10%;
-          margin: 0;
-          padding: 1% 0 0;
-          flex-direction: row;
-
-          a {
-            margin: 1% 0 0 2%;
-            text-decoration: none;
-            color: black;
-            font-size: 2rem;
-          }
-
-          img {
-            width: 47px;
-            height: 47px;
-            margin: 0 3% 0 4%;
-          }
-        }
-      }
-    }
-
-    .button_block {
-      width: 40%;
-    }
-  }
-}
-
-@media (min-width: 992px) and (max-width: 1199px) {
-  #analyze {
-    display: flex;
-    width: 100%;
-    margin: 5% 0 0;
-    flex-wrap: wrap;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-
-    h1 {
-      width: 100%;
-      text-align: center;
-      font-size: 2rem;
-    }
-
-    p {
-      width: 36%;
-      margin: 2% 32% 4%;
-      justify-content: center;
-      text-align: center;
-    }
-
-    .img_analyze {
-      width: 70%;
-      margin: 0 15%;
-    }
-
-    .human_analyze {
-      width: 70%;
-      margin: 0 15%;
-      flex-wrap: wrap;
-
-      .blood_container {
-        width: 100%;
-        height: 15%;
-        border-radius: 10px;
-        margin-bottom: 2%;
-        background-color: #fff3e0;
-
-        .blood_items {
-          display: flex;
-          height: 10%;
-          width: 70%;
-          margin: 0;
-          padding: 1% 0 0;
-          flex-direction: row;
-
-          a {
-            margin: 1% 0 0 2%;
-            text-decoration: none;
-            color: black;
-            font-size: 2rem;
-          }
-
-          img {
-            width: 47px;
-            height: 47px;
-            margin: 0 3% 0 4%;
-          }
-        }
-      }
-
-      .mood_container {
-        width: 100%;
-        height: 15%;
-        border-radius: 10px;
-        margin-bottom: 2%;
-        background-color: #deecf1;
-
-        .mood_items {
-          display: flex;
-          height: 10%;
-          width: 90%;
-          margin: 0;
-          padding: 1% 0;
-          flex-direction: row;
-
-          a {
-            margin: 1% 0 0 0;
-            text-decoration: none;
-            color: black;
-            font-size: 2rem;
-          }
-
-          img {
-            width: 47px;
-            height: 47px;
-            margin: 0 3% 0 2%;
-          }
-        }
-      }
-
-      .pain_container {
-        width: 100%;
-        height: 15%;
-        border-radius: 10px;
-        margin-bottom: 2%;
-        background-color: #f5f9ea;
-
-        .pain_items {
-          display: flex;
-          height: 10%;
-          width: 50%;
-          margin: 0;
-          padding: 1% 0 0;
-          flex-direction: row;
-
-          a {
-            margin: 1% 0 0 2%;
-            text-decoration: none;
-            color: black;
-            font-size: 2rem;
-          }
-
-          img {
-            width: 47px;
-            height: 47px;
-            margin: 0 3% 0 4%;
-          }
-        }
-      }
-
-      .sleep_container {
-        width: 100%;
-        height: 15%;
-        border-radius: 10px;
-        margin-bottom: 2%;
-        background-color: #f3e4f6;
-
-        .sleep_items {
-          display: flex;
-          height: 10%;
-          margin: 0;
-          padding: 1% 0 0;
-          flex-direction: row;
-
-          a {
-            margin: 1% 0 0 2%;
-            text-decoration: none;
-            color: black;
-            font-size: 2rem;
-          }
-
-          img {
-            width: 47px;
-            height: 47px;
-            margin: 0 3% 0 4%;
-          }
-        }
-      }
-
-      .stress_container {
-        width: 100%;
-        height: 15%;
-        border-radius: 10px;
-        margin-bottom: 2%;
-        background-color: #e9edfe;
-
-        .stress_items {
-          display: flex;
-          height: 10%;
-          margin: 0;
-          padding: 1% 0 0;
-          flex-direction: row;
-
-          a {
-            margin: 1% 0 0 2%;
-            text-decoration: none;
-            color: black;
-            font-size: 2rem;
-          }
-
-          img {
-            width: 47px;
-            height: 47px;
-            margin: 0 3% 0 4%;
-          }
-        }
-      }
-    }
-
-    .button_block {
-      width: 40%;
     }
   }
 }
