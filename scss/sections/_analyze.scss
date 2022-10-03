@@ -3,84 +3,81 @@
   width: 100%;
   height: 100%;
   margin: 5% 0 0;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   color: black;
   text-align: center;
   box-sizing: border-box;
 
-  .row {
-    justify-content: center;
+  header {
+    width: 100%;
+    border: none;
+    flex-direction: column;
 
-    header {
-      width: 100%;
-      border: none;
-      flex-direction: column;
-
-      h1 {
-        font-size: 2rem;
-        text-align: center;
-      }
-
-      p {
-        width: 100%;
-        font-size: 20px;
-        justify-content: center;
-        text-align: center;
-      }
+    h1 {
+      font-size: 2rem;
+      text-align: center;
     }
 
-    .analyze_components {
-      display: flex;
-      margin-top: 2%;
-      gap: 5%;
+    p {
+      width: 100%;
+      font-size: 20px;
       justify-content: center;
-      flex-wrap: wrap;
+      text-align: center;
+    }
+  }
 
-      .human_analyze {
-        width: 100%;
-        padding: 0;
-        margin: 2% 0 0;
-        list-style-type: none;
+  .analyze_components {
+    display: flex;
+    margin-top: 2%;
+    gap: 5%;
+    justify-content: center;
+    flex-wrap: wrap;
 
-        li {
-          display: flex;
-          min-height: 80px;
-          border-radius: 10px;
-          margin-bottom: 2%;
-          align-items: center;
+    .human_analyze {
+      width: 100%;
+      padding: 0;
+      margin: 2% 0 0;
+      list-style-type: none;
 
-          a {
-            text-decoration: none;
-            color: black;
-            font-size: 2rem;
-          }
+      li {
+        display: flex;
+        min-height: 80px;
+        border-radius: 10px;
+        margin-bottom: 2%;
+        align-items: center;
 
-          img {
-            width: 47px;
-            height: 47px;
-            margin: 0 3% 0 4%;
-          }
-        }
-        .blood_container {
-          background-color: #fff3e0;
-        }
-
-        .mood_container {
-          background-color: #deecf1;
+        a {
+          text-decoration: none;
+          color: black;
+          font-size: 2rem;
         }
 
-        .pain_container {
-          background-color: #f5f9ea;
+        img {
+          width: 47px;
+          height: 47px;
+          margin: 0 3% 0 4%;
         }
+      }
+      .blood_container {
+        background-color: #fff3e0;
+      }
 
-        .sleep_container {
-          background-color: #f3e4f6;
-        }
+      .mood_container {
+        background-color: #deecf1;
+      }
 
-        .stress_container {
-          background-color: #e9edfe;
-        }
+      .pain_container {
+        background-color: #f5f9ea;
+      }
+
+      .sleep_container {
+        background-color: #f3e4f6;
+      }
+
+      .stress_container {
+        background-color: #e9edfe;
       }
     }
   }
