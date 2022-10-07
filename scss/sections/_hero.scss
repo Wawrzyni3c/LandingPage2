@@ -1,11 +1,16 @@
 #hero {
   display: flex;
+
   .hero_container {
+    width: 100%;
     flex-wrap: wrap;
+
     .hero_title {
       flex-wrap: wrap;
 
       .hero_text {
+        width: 100%;
+
         h3 {
           font-size: large;
         }
@@ -47,6 +52,7 @@
         display: flex;
         margin: 3% 0;
         align-items: center;
+        flex-wrap: wrap;
 
         .price_block {
           display: flex;
@@ -80,6 +86,11 @@
     .hero_img {
       margin-top: 15%;
       height: 85%;
+      width: 100%;
+
+      img {
+        object-fit: contain;
+      }
     }
   }
 }
@@ -90,7 +101,8 @@
       .hero_title {
         .hero_text {
           h1 {
-            font-size: 3rem;
+            width: 100%;
+            font-size: 2rem;
           }
         }
       }
@@ -112,6 +124,10 @@
           }
         }
       }
+
+      .hero_img {
+        display: none;
+      }
     }
   }
 }
@@ -125,6 +141,10 @@
             font-size: 3rem;
           }
         }
+      }
+
+      .hero_img {
+        display: none;
       }
     }
   }

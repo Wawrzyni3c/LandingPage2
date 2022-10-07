@@ -2,17 +2,23 @@ header {
   display: flex;
   height: auto;
   min-height: 100px;
+  width: 100%;
   border-bottom: #e8e9ea solid 1px;
   align-items: center;
+  flex-wrap: wrap;
 
   .specrow {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
 
     .logo {
       display: flex;
       align-items: center;
+      img {
+        width: 100%;
+      }
     }
 
     nav {

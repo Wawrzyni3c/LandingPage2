@@ -30,10 +30,24 @@
 
   .analyze_components {
     display: flex;
+    width: 100%;
     margin-top: 2%;
     gap: 5%;
     justify-content: center;
     flex-wrap: wrap;
+
+    .specrow {
+      justify-content: space-between;
+    }
+    .img_container {
+      justify-content: center;
+
+      .analyze_img {
+        img {
+          width: 100%;
+        }
+      }
+    }
 
     .human_analyze {
       width: 100%;
@@ -60,23 +74,23 @@
           margin: 0 3% 0 4%;
         }
       }
-      .blood_container {
+      .blood {
         background-color: #fff3e0;
       }
 
-      .mood_container {
+      .mood {
         background-color: #deecf1;
       }
 
-      .pain_container {
+      .pain {
         background-color: #f5f9ea;
       }
 
-      .sleep_container {
+      .sleep {
         background-color: #f3e4f6;
       }
 
-      .stress_container {
+      .stress {
         background-color: #e9edfe;
       }
     }
