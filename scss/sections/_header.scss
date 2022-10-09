@@ -7,11 +7,12 @@ header {
   align-items: center;
   flex-wrap: wrap;
 
-  .specrow {
+  .header_navigation {
     display: flex;
+    width: 100%;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
+    flex-wrap: wrap;
 
     .logo {
       display: flex;
@@ -50,7 +51,7 @@ header {
 
 @media (max-width: 767px) {
   header {
-    .specrow {
+    .header_navigation {
       justify-content: center;
     }
   }
@@ -58,7 +59,7 @@ header {
 
 @media (min-width: 768px) and (max-width: 991px) {
   header {
-    .specrow {
+    .header_navigation {
       justify-content: center;
     }
   }
@@ -66,7 +67,7 @@ header {
 
 @media (min-width: 992px) and (max-width: 1199px) {
   header {
-    .specrow {
+    .header_navigation {
       justify-content: center;
     }
   }

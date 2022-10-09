@@ -83,12 +83,13 @@
       }
     }
 
-    .hero_img {
+    .hero_image {
       margin-top: 15%;
       height: 85%;
       width: 100%;
 
       img {
+        width: 100%;
         object-fit: contain;
       }
     }
@@ -107,7 +108,7 @@
         }
       }
 
-      .hero_img {
+      .hero_image {
         display: none;
       }
     }
@@ -125,7 +126,7 @@
         }
       }
 
-      .hero_img {
+      .hero_image {
         display: none;
       }
     }
@@ -143,7 +144,7 @@
         }
       }
 
-      .hero_img {
+      .hero_image {
         display: none;
       }
     }

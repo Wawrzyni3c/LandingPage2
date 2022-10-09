@@ -39,13 +39,12 @@
     .specrow {
       justify-content: space-between;
     }
-    .img_container {
-      justify-content: center;
 
-      .analyze_img {
-        img {
-          width: 100%;
-        }
+    .analyze_image {
+      width: 100%;
+
+      img {
+        width: 100%;
       }
     }
 
