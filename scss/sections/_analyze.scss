@@ -1,0 +1,93 @@
+#analyze {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  margin: 5% 0 0;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  text-align: center;
+  box-sizing: border-box;
+
+  header {
+    width: 100%;
+    border: none;
+    flex-direction: column;
+
+    h1 {
+      font-size: 2rem;
+      text-align: center;
+    }
+
+    p {
+      width: 100%;
+      font-size: 20px;
+      justify-content: center;
+      text-align: center;
+    }
+  }
+
+  .analyze_components {
+    display: flex;
+    width: 100%;
+    margin-top: 2%;
+    gap: 5%;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    .analyze_image {
+      width: 100%;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    .human_analyze {
+      width: 100%;
+      padding: 0;
+      margin: 2% 0 0;
+      list-style-type: none;
+
+      li {
+        display: flex;
+        min-height: 80px;
+        border-radius: 10px;
+        margin-bottom: 2%;
+        align-items: center;
+
+        a {
+          text-decoration: none;
+          color: black;
+          font-size: 2rem;
+        }
+
+        img {
+          width: 47px;
+          height: 47px;
+          margin: 0 3% 0 4%;
+        }
+      }
+      .blood {
+        background-color: #fff3e0;
+      }
+
+      .mood {
+        background-color: #deecf1;
+      }
+
+      .pain {
+        background-color: #f5f9ea;
+      }
+
+      .sleep {
+        background-color: #f3e4f6;
+      }
+
+      .stress {
+        background-color: #e9edfe;
+      }
+    }
+  }
+}
