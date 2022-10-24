@@ -278,7 +278,7 @@ body {
   margin: 0;
 }
 
-.submit_button {
+button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -298,7 +298,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
 }
-.submit_button a {
+button a {
   color: white;
   text-decoration: none;
   text-transform: uppercase;
@@ -670,22 +670,27 @@ header .header_navigation nav ul li a:hover {
   width: 100%;
 }
 #personalize .personalize_title .personalize_text {
+  width: 100%;
   margin: 33% 0 10%;
 }
 #personalize .personalize_title .personalize_text h1 {
   width: 100%;
+  margin: 5% 0;
   font-size: 2rem;
 }
 #personalize .personalize_title .personalize_text p {
   width: 70%;
   margin: 0 0 auto;
-  font-size: 20px;
+  font-size: 1.2rem;
 }
 #personalize .personalize_img {
   position: relative;
   width: 100%;
   -o-object-fit: contain;
      object-fit: contain;
+}
+#personalize .personalize_img .img_page {
+  width: 100%;
 }
 #personalize .personalize_img .phone_page {
   position: absolute;
@@ -695,15 +700,7 @@ header .header_navigation nav ul li a:hover {
 
 @media (max-width: 767px) {
   #personalize .personalize_title .personalize_text {
-    width: 100%;
     margin: 0 0 5%;
-  }
-  #personalize .personalize_title .personalize_text h1 {
-    width: 100%;
-    margin: 5% 0;
-  }
-  #personalize .personalize_img .img_page {
-    width: 100%;
   }
   #personalize .personalize_img .phone_page {
     display: none;
@@ -711,15 +708,7 @@ header .header_navigation nav ul li a:hover {
 }
 @media (min-width: 768px) and (max-width: 991px) {
   #personalize .personalize_title .personalize_text {
-    width: 100%;
     margin: 0 0 5%;
-  }
-  #personalize .personalize_title .personalize_text h1 {
-    width: 100%;
-    margin: 5% 0;
-  }
-  #personalize .personalize_img .img_page {
-    width: 100%;
   }
   #personalize .personalize_img .phone_page {
     display: none;
@@ -727,15 +716,7 @@ header .header_navigation nav ul li a:hover {
 }
 @media (min-width: 992px) and (max-width: 1199px) {
   #personalize .personalize_title .personalize_text {
-    width: 100%;
     margin: 0 0 5%;
-  }
-  #personalize .personalize_title .personalize_text h1 {
-    width: 100%;
-    margin: 5% 0;
-  }
-  #personalize .personalize_img .img_page {
-    width: 100%;
   }
   #personalize .personalize_img .phone_page {
     display: none;

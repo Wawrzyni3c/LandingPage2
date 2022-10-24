@@ -5,17 +5,19 @@
     width: 100%;
 
     .personalize_text {
+      width: 100%;
       margin: 33% 0 10%;
 
       h1 {
         width: 100%;
+        margin: 5% 0;
         font-size: 2rem;
       }
 
       p {
         width: 70%;
         margin: 0 0 auto;
-        font-size: 20px;
+        font-size: 1.2rem;
       }
     }
   }
@@ -23,6 +25,10 @@
     position: relative;
     width: 100%;
     object-fit: contain;
+
+    .img_page {
+      width: 100%;
+    }
 
     .phone_page {
       position: absolute;
@@ -36,21 +42,11 @@
   #personalize {
     .personalize_title {
       .personalize_text {
-        width: 100%;
         margin: 0 0 5%;
-
-        h1 {
-          width: 100%;
-          margin: 5% 0;
-        }
       }
     }
 
     .personalize_img {
-      .img_page {
-        width: 100%;
-      }
-
       .phone_page {
         display: none;
       }
@@ -62,21 +58,11 @@
   #personalize {
     .personalize_title {
       .personalize_text {
-        width: 100%;
         margin: 0 0 5%;
-
-        h1 {
-          width: 100%;
-          margin: 5% 0;
-        }
       }
     }
 
     .personalize_img {
-      .img_page {
-        width: 100%;
-      }
-
       .phone_page {
         display: none;
       }
@@ -88,21 +74,11 @@
   #personalize {
     .personalize_title {
       .personalize_text {
-        width: 100%;
         margin: 0 0 5%;
-
-        h1 {
-          width: 100%;
-          margin: 5% 0;
-        }
       }
     }
 
     .personalize_img {
-      .img_page {
-        width: 100%;
-      }
-
       .phone_page {
         display: none;
       }
