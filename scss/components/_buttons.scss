@@ -1,23 +1,10 @@
 button {
   display: flex;
   border-radius: 10px;
-  border: $secondary-color-orange solid 1px;
   font-weight: 200;
   line-height: 3rem;
   font-size: 1rem;
-  text-transform: uppercase;
-  background-color: $secondary-color-orange;
-  color: white;
   cursor: pointer;
   justify-content: center;
   align-items: center;
-
-  a {
-    color: white;
-    text-decoration: none;
-    text-transform: uppercase;
-  }
-
-  i {
-  }
 }
