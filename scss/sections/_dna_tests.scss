@@ -1,0 +1,119 @@
+.dna_components {
+  justify-content: center;
+  header {
+    width: 100%;
+    border: none;
+    flex-direction: column;
+
+    h1 {
+      font-size: 1.5rem;
+      text-align: center;
+    }
+  }
+
+  .other_dna_test {
+    display: flex;
+    height: 80%;
+    width: 70%;
+    border-radius: 10px;
+    margin: 5% 0 5% 30%;
+    justify-content: center;
+    text-align: center;
+    background-color: rgb(241, 239, 239);
+    flex-wrap: wrap;
+
+    h2 {
+      width: 100%;
+    }
+
+    .other_dna_text {
+      display: flex;
+      width: 100%;
+      align-items: center;
+      justify-content: center;
+
+      p {
+        width: 60%;
+      }
+
+      i {
+        color: red;
+        padding-right: 10px;
+      }
+    }
+  }
+
+  .our_dna_test {
+    display: flex;
+    width: 70%;
+    border: 1px solid $secondary-color-orange;
+    margin-right: 30%;
+    border-radius: 10px;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+
+    h2 {
+      width: 100%;
+    }
+
+    .our_dna_text {
+      display: flex;
+      width: 100%;
+      align-items: center;
+      justify-content: center;
+
+      p {
+        width: 60%;
+      }
+
+      i {
+        color: $primary-color-blue;
+        padding-right: 10px;
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .dna_components {
+    .other_dna_test {
+      min-height: 350px;
+      height: 100%;
+      margin: 0 15%;
+    }
+
+    .our_dna_test {
+      min-height: 350px;
+      margin: 10% 15% 0;
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .dna_components {
+    .other_dna_test {
+      min-height: 350px;
+      margin: 5% 15% 5% 15%;
+    }
+
+    .our_dna_test {
+      min-height: 350px;
+      margin: 0 15%;
+    }
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .dna_components {
+    .other_dna_test {
+      min-height: 400px;
+      margin: 5% 15% 5% 15%;
+    }
+
+    .our_dna_test {
+      min-height: 400px;
+      margin: 0 15%;
+    }
+  }
+}
