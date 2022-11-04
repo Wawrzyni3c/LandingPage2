@@ -11,7 +11,6 @@ header {
 
 .other_dna_test {
   display: flex;
-  height: 80%;
   width: 70%;
   border-radius: 10px;
   margin: 5% 0 5% 30%;
@@ -74,37 +73,30 @@ header {
 
 @media (max-width: 767px) {
   .other_dna_test {
-    min-height: 350px;
-    height: 100%;
     margin: 0 15%;
   }
 
   .our_dna_test {
-    min-height: 350px;
     margin: 10% 15% 0;
   }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
   .other_dna_test {
-    min-height: 350px;
     margin: 5% 15% 5% 15%;
   }
 
   .our_dna_test {
-    min-height: 350px;
     margin: 0 15%;
   }
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
   .other_dna_test {
-    min-height: 400px;
     margin: 5% 15% 5% 15%;
   }
 
   .our_dna_test {
-    min-height: 400px;
     margin: 0 15%;
   }
 }
