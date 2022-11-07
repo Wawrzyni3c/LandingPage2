@@ -9,12 +9,12 @@
       {
         "format": "expanded",
         "extensionName": ".css",
-        "savePath": "/LandingPage2/css"
+        "savePath": "/css"
       },
       {
         "extensionName": ".min.css",
         "format": "compressed",
-        "savePath": "/LandingPage2/css"
+        "savePath": "/css"
       }
     ],
     "liveSassCompile.settings.excludeList": ["**/node_modules/**", ".vscode/**"],
