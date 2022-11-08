@@ -1,0 +1,77 @@
+#health_plans {
+  display: flex;
+
+  .health_plans_text {
+    width: 100%;
+    margin: 33% 0 10%;
+
+    h1 {
+      width: 70%;
+      margin: 5% 0;
+      font-size: 2rem;
+    }
+
+    p {
+      width: 70%;
+      margin: 0 0 auto;
+      font-size: 1.2rem;
+    }
+  }
+  .health_plans_img {
+    position: relative;
+    width: 100%;
+    object-fit: contain;
+
+    .img_page {
+      width: 100%;
+    }
+
+    .phone_page {
+      position: absolute;
+      right: 70%;
+      bottom: 0;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  #health_plans {
+    .health_plans_text {
+      margin: 0 0 5%;
+    }
+
+    .health_plans_img {
+      .phone_page {
+        display: none;
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  #health_plans {
+    .health_plans_text {
+      margin: 0 0 5%;
+    }
+
+    .health_plans_img {
+      .phone_page {
+        display: none;
+      }
+    }
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  #health_plans {
+    .health_plans_text {
+      margin: 0 0 5%;
+    }
+  }
+
+  .health_plans_img {
+    .phone_page {
+      display: none;
+    }
+  }
+}
